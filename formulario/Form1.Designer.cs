@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cliente));
             this.Prueba = new System.Windows.Forms.Button();
             this.bancoDataSet1 = new formulario.bancoDataSet1();
             this.label11 = new System.Windows.Forms.Label();
@@ -62,6 +63,7 @@
             this.clienteBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.clienteTableAdapter1 = new formulario.bancoDataSet2TableAdapters.clienteTableAdapter();
             this.btnVerfSucs = new System.Windows.Forms.Button();
+            this.btEMP = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bancoDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource1)).BeginInit();
@@ -93,7 +95,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(64, 404);
+            this.button1.Location = new System.Drawing.Point(187, 403);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(137, 41);
             this.button1.TabIndex = 1;
@@ -310,7 +312,7 @@
             // 
             // btnVerfSucs
             // 
-            this.btnVerfSucs.Location = new System.Drawing.Point(570, 405);
+            this.btnVerfSucs.Location = new System.Drawing.Point(490, 405);
             this.btnVerfSucs.Name = "btnVerfSucs";
             this.btnVerfSucs.Size = new System.Drawing.Size(123, 39);
             this.btnVerfSucs.TabIndex = 28;
@@ -318,11 +320,22 @@
             this.btnVerfSucs.UseVisualStyleBackColor = true;
             this.btnVerfSucs.Click += new System.EventHandler(this.btnVerfSucs_Click);
             // 
+            // btEMP
+            // 
+            this.btEMP.Location = new System.Drawing.Point(619, 405);
+            this.btEMP.Name = "btEMP";
+            this.btEMP.Size = new System.Drawing.Size(127, 39);
+            this.btEMP.TabIndex = 29;
+            this.btEMP.Text = "Agregar empleado";
+            this.btEMP.UseVisualStyleBackColor = true;
+            this.btEMP.Click += new System.EventHandler(this.btEMP_Click);
+            // 
             // Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(773, 470);
+            this.Controls.Add(this.btEMP);
             this.Controls.Add(this.btnVerfSucs);
             this.Controls.Add(this.textDirection);
             this.Controls.Add(this.label13);
@@ -351,6 +364,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Prueba);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Cliente";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Cliente_Load);
@@ -397,6 +411,7 @@
         private System.Windows.Forms.BindingSource clienteBindingSource1;
         private bancoDataSet2TableAdapters.clienteTableAdapter clienteTableAdapter1;
         private System.Windows.Forms.Button btnVerfSucs;
+        private System.Windows.Forms.Button btEMP;
     }
 }
 

@@ -154,5 +154,12 @@ namespace formulario
 
                 m.Visible = true;
             }
+
+        private void btEMP_Click(object sender, EventArgs e)
+        {
+            Empleados m = new Empleados();
+
+            m.Visible = true;
         }
+    }
 }

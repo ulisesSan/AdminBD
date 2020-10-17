@@ -53,3 +53,4 @@ D:\source\repos\formulario\formulario\obj\Debug\formulario.csproj.CopyComplete
 D:\source\repos\formulario\formulario\obj\Debug\formulario.exe
 D:\source\repos\formulario\formulario\obj\Debug\formulario.pdb
 D:\source\repos\formulario\formulario\bin\Debug\MySql.Data.dll
+D:\source\repos\formulario\formulario\obj\Debug\formulario.Empleados.resources
