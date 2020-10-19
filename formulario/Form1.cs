@@ -110,12 +110,6 @@ namespace formulario
 
         }
 
-
-         private void btnCliente_Click(object sender, EventArgs e)
-         {
-            
-         }
-
          private void button1_Click(object sender, EventArgs e)
          {
                 AgrSucursales m = new AgrSucursales();
@@ -123,16 +117,6 @@ namespace formulario
                 m.Visible = true;
          }
 
-
-            private void btnSucursal_Click(object sender, EventArgs e)
-            {
-             
-            }
-
-            private void label12_Click(object sender, EventArgs e)
-            {
-
-            }
 
             private void Cliente_Load(object sender, EventArgs e)
             {
