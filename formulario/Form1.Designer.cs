@@ -28,10 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cliente));
             this.Prueba = new System.Windows.Forms.Button();
-            this.bancoDataSet1 = new formulario.bancoDataSet1();
             this.label11 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.textSucursals = new System.Windows.Forms.TextBox();
@@ -58,14 +56,8 @@
             this.textNumCli = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.textDirection = new System.Windows.Forms.TextBox();
-            this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.clienteTableAdapter = new formulario.bancoDataSet1TableAdapters.clienteTableAdapter();
-            this.clienteBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.btEMP = new System.Windows.Forms.Button();
             this.BtnTans = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.bancoDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // Prueba
@@ -77,11 +69,6 @@
             this.Prueba.Text = "Registrar";
             this.Prueba.UseVisualStyleBackColor = true;
             this.Prueba.Click += new System.EventHandler(this.Prueba_Click);
-            // 
-            // bancoDataSet1
-            // 
-            this.bancoDataSet1.DataSetName = "bancoDataSet1";
-            this.bancoDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label11
             // 
@@ -294,15 +281,6 @@
             this.textDirection.Size = new System.Drawing.Size(180, 20);
             this.textDirection.TabIndex = 27;
             // 
-            // clienteBindingSource
-            // 
-            this.clienteBindingSource.DataMember = "cliente";
-            this.clienteBindingSource.DataSource = this.bancoDataSet1;
-            // 
-            // clienteTableAdapter
-            // 
-            this.clienteTableAdapter.ClearBeforeFill = true;
-            // 
             // btEMP
             // 
             this.btEMP.Location = new System.Drawing.Point(315, 403);
@@ -361,9 +339,6 @@
             this.Name = "Cliente";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Cliente_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.bancoDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -372,7 +347,6 @@
         #endregion
 
         private System.Windows.Forms.Button Prueba;
-        private bancoDataSet1 bancoDataSet1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textSucursals;
@@ -399,9 +373,6 @@
         private System.Windows.Forms.TextBox textNumCli;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox textDirection;
-        private System.Windows.Forms.BindingSource clienteBindingSource;
-        private bancoDataSet1TableAdapters.clienteTableAdapter clienteTableAdapter;
-        private System.Windows.Forms.BindingSource clienteBindingSource1;
         private System.Windows.Forms.Button btEMP;
         private System.Windows.Forms.Button BtnTans;
     }

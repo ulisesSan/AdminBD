@@ -100,6 +100,7 @@ namespace formulario
                     NumCli,Phone,Account,Direction);
             }
 
+            //Se borra el contenido de las cajas de texto
             textName.Text = (""); textAccount.Text = ("");
             textAP.Text = (""); textTypeAccount.Text = ("");
             textDate.Text = (""); textBalance.Text = ("");
