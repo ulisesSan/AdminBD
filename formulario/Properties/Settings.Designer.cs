@@ -44,5 +44,15 @@ namespace formulario.Properties {
                 return ((string)(this["bancoConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=ulises;password=a;database=banco")]
+        public string sucursaldataconection {
+            get {
+                return ((string)(this["sucursaldataconection"]));
+            }
+        }
     }
 }

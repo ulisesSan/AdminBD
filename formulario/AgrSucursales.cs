@@ -26,8 +26,37 @@ namespace formulario
             string Numero = textNumSucs.Text;
 
 
-            sqlConnection.agrSuc(Nombre,Direccion,Horario,Numero);   
-         
+            sqlConnection.agrSuc(Nombre,Direccion,Horario,Numero);
+
+            // TODO: esta línea de código carga datos en la tabla 'bancoDataSet2.sucursal' Puede moverla o quitarla según sea necesario.
+            this.sucursalTableAdapter1.Fill(this.bancoDataSet2.sucursal);
+            // TODO: esta línea de código carga datos en la tabla 'bancoDataSet.sucursal' Puede moverla o quitarla según sea necesario.
+            this.sucursalTableAdapter.Fill(this.bancoDataSet.sucursal);
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AgrSucursales_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'bancoDataSet2.sucursal' Puede moverla o quitarla según sea necesario.
+            this.sucursalTableAdapter1.Fill(this.bancoDataSet2.sucursal);
+            // TODO: esta línea de código carga datos en la tabla 'bancoDataSet.sucursal' Puede moverla o quitarla según sea necesario.
+            this.sucursalTableAdapter.Fill(this.bancoDataSet.sucursal);
+
+        }
+
+        private void Exitbtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -46,7 +46,6 @@ D:\source\repos\formulario\formulario\obj\Debug\formulario.exe.config
 D:\source\repos\formulario\formulario\obj\Debug\formulario.AgrSucursales.resources
 D:\source\repos\formulario\formulario\obj\Debug\formulario.Cliente.resources
 D:\source\repos\formulario\formulario\obj\Debug\formulario.Properties.Resources.resources
-D:\source\repos\formulario\formulario\obj\Debug\formulario.Sucursales.resources
 D:\source\repos\formulario\formulario\obj\Debug\formulario.csproj.GenerateResource.cache
 D:\source\repos\formulario\formulario\obj\Debug\formulario.csproj.CoreCompileInputs.cache
 D:\source\repos\formulario\formulario\obj\Debug\formulario.csproj.CopyComplete
@@ -54,3 +53,4 @@ D:\source\repos\formulario\formulario\obj\Debug\formulario.exe
 D:\source\repos\formulario\formulario\obj\Debug\formulario.pdb
 D:\source\repos\formulario\formulario\bin\Debug\MySql.Data.dll
 D:\source\repos\formulario\formulario\obj\Debug\formulario.Empleados.resources
+D:\source\repos\formulario\formulario\obj\Debug\formulario.Transacciones.resources

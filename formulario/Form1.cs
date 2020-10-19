@@ -112,7 +112,7 @@ namespace formulario
 
          private void btnCliente_Click(object sender, EventArgs e)
          {
-
+            
          }
 
          private void button1_Click(object sender, EventArgs e)
@@ -122,16 +122,10 @@ namespace formulario
                 m.Visible = true;
          }
 
-            private void label7_Click(object sender, EventArgs e)
-            {
-
-            }
 
             private void btnSucursal_Click(object sender, EventArgs e)
             {
-                Sucursales m = new Sucursales();
-
-                m.Visible = true;
+             
             }
 
             private void label12_Click(object sender, EventArgs e)
@@ -150,15 +144,24 @@ namespace formulario
 
             private void btnVerfSucs_Click(object sender, EventArgs e)
             {
-                Sucursales m = new Sucursales();
-
-                m.Visible = true;
             }
 
         private void btEMP_Click(object sender, EventArgs e)
         {
             Empleados m = new Empleados();
 
+            m.Visible = true;
+        }
+
+        private void BtnTans_Click(object sender, EventArgs e)
+        {
+            Transacciones m = new Transacciones();
+            m.Visible = true;
+        }
+
+        private void btEMP_Click_1(object sender, EventArgs e)
+        {
+            Empleados m = new Empleados();
             m.Visible = true;
         }
     }

@@ -61,9 +61,8 @@
             this.clienteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.clienteTableAdapter = new formulario.bancoDataSet1TableAdapters.clienteTableAdapter();
             this.clienteBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.clienteTableAdapter1 = new formulario.bancoDataSet2TableAdapters.clienteTableAdapter();
-            this.btnVerfSucs = new System.Windows.Forms.Button();
             this.btEMP = new System.Windows.Forms.Button();
+            this.BtnTans = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bancoDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource1)).BeginInit();
@@ -71,7 +70,7 @@
             // 
             // Prueba
             // 
-            this.Prueba.Location = new System.Drawing.Point(330, 404);
+            this.Prueba.Location = new System.Drawing.Point(155, 403);
             this.Prueba.Name = "Prueba";
             this.Prueba.Size = new System.Drawing.Size(154, 54);
             this.Prueba.TabIndex = 0;
@@ -95,7 +94,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(187, 403);
+            this.button1.Location = new System.Drawing.Point(12, 403);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(137, 41);
             this.button1.TabIndex = 1;
@@ -147,12 +146,11 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(528, 49);
+            this.label7.Location = new System.Drawing.Point(528, 39);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(95, 13);
             this.label7.TabIndex = 8;
             this.label7.Text = "Numero de cuenta";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // textTypeAccount
             // 
@@ -272,7 +270,6 @@
             this.label12.Size = new System.Drawing.Size(93, 13);
             this.label12.TabIndex = 24;
             this.label12.Text = "Numero de cliente";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // textNumCli
             // 
@@ -306,37 +303,33 @@
             // 
             this.clienteTableAdapter.ClearBeforeFill = true;
             // 
-            // clienteTableAdapter1
-            // 
-            this.clienteTableAdapter1.ClearBeforeFill = true;
-            // 
-            // btnVerfSucs
-            // 
-            this.btnVerfSucs.Location = new System.Drawing.Point(490, 405);
-            this.btnVerfSucs.Name = "btnVerfSucs";
-            this.btnVerfSucs.Size = new System.Drawing.Size(123, 39);
-            this.btnVerfSucs.TabIndex = 28;
-            this.btnVerfSucs.Text = "Verificar sucursal";
-            this.btnVerfSucs.UseVisualStyleBackColor = true;
-            this.btnVerfSucs.Click += new System.EventHandler(this.btnVerfSucs_Click);
-            // 
             // btEMP
             // 
-            this.btEMP.Location = new System.Drawing.Point(619, 405);
+            this.btEMP.Location = new System.Drawing.Point(315, 403);
             this.btEMP.Name = "btEMP";
             this.btEMP.Size = new System.Drawing.Size(127, 39);
             this.btEMP.TabIndex = 29;
             this.btEMP.Text = "Agregar empleado";
             this.btEMP.UseVisualStyleBackColor = true;
-            this.btEMP.Click += new System.EventHandler(this.btEMP_Click);
+            this.btEMP.Click += new System.EventHandler(this.btEMP_Click_1);
+            // 
+            // BtnTans
+            // 
+            this.BtnTans.Location = new System.Drawing.Point(455, 402);
+            this.BtnTans.Name = "BtnTans";
+            this.BtnTans.Size = new System.Drawing.Size(125, 40);
+            this.BtnTans.TabIndex = 30;
+            this.BtnTans.Text = "Transacciones";
+            this.BtnTans.UseVisualStyleBackColor = true;
+            this.BtnTans.Click += new System.EventHandler(this.BtnTans_Click);
             // 
             // Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(773, 470);
+            this.Controls.Add(this.BtnTans);
             this.Controls.Add(this.btEMP);
-            this.Controls.Add(this.btnVerfSucs);
             this.Controls.Add(this.textDirection);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.textNumCli);
@@ -409,9 +402,8 @@
         private System.Windows.Forms.BindingSource clienteBindingSource;
         private bancoDataSet1TableAdapters.clienteTableAdapter clienteTableAdapter;
         private System.Windows.Forms.BindingSource clienteBindingSource1;
-        private bancoDataSet2TableAdapters.clienteTableAdapter clienteTableAdapter1;
-        private System.Windows.Forms.Button btnVerfSucs;
         private System.Windows.Forms.Button btEMP;
+        private System.Windows.Forms.Button BtnTans;
     }
 }
 
