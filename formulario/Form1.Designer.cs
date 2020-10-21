@@ -62,7 +62,7 @@
             // 
             // Prueba
             // 
-            this.Prueba.Location = new System.Drawing.Point(155, 403);
+            this.Prueba.Location = new System.Drawing.Point(222, 403);
             this.Prueba.Name = "Prueba";
             this.Prueba.Size = new System.Drawing.Size(154, 54);
             this.Prueba.TabIndex = 0;
@@ -283,7 +283,7 @@
             // 
             // btEMP
             // 
-            this.btEMP.Location = new System.Drawing.Point(315, 403);
+            this.btEMP.Location = new System.Drawing.Point(435, 403);
             this.btEMP.Name = "btEMP";
             this.btEMP.Size = new System.Drawing.Size(127, 39);
             this.btEMP.TabIndex = 29;
@@ -293,7 +293,7 @@
             // 
             // BtnTans
             // 
-            this.BtnTans.Location = new System.Drawing.Point(455, 402);
+            this.BtnTans.Location = new System.Drawing.Point(605, 402);
             this.BtnTans.Name = "BtnTans";
             this.BtnTans.Size = new System.Drawing.Size(125, 40);
             this.BtnTans.TabIndex = 30;
@@ -337,7 +337,7 @@
             this.Controls.Add(this.Prueba);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Cliente";
-            this.Text = "Form1";
+            this.Text = "Clientes";
             this.Load += new System.EventHandler(this.Cliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
