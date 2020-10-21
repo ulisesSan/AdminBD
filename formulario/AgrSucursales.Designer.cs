@@ -38,23 +38,18 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.textNumSucs = new System.Windows.Forms.TextBox();
+            this.Exitbtn = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.bancoDataSet5 = new formulario.bancoDataSet5();
             this.sucursalBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bancoDataSet = new formulario.bancoDataSet();
-            this.sucursalTableAdapter = new formulario.bancoDataSetTableAdapters.sucursalTableAdapter();
-            this.bancoDataSet2 = new formulario.bancoDataSet2();
-            this.sucursalBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.sucursalTableAdapter1 = new formulario.bancoDataSet2TableAdapters.sucursalTableAdapter();
+            this.sucursalTableAdapter = new formulario.bancoDataSet5TableAdapters.sucursalTableAdapter();
             this.idsucursalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.direccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.horarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Exitbtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bancoDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sucursalBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bancoDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bancoDataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sucursalBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -81,7 +76,6 @@
             this.label2.Size = new System.Drawing.Size(52, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Dirección";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // textDirSucs
             // 
@@ -124,7 +118,6 @@
             this.label4.Size = new System.Drawing.Size(101, 13);
             this.label4.TabIndex = 7;
             this.label4.Text = "Numero de sucursal";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // textNumSucs
             // 
@@ -132,6 +125,16 @@
             this.textNumSucs.Name = "textNumSucs";
             this.textNumSucs.Size = new System.Drawing.Size(58, 20);
             this.textNumSucs.TabIndex = 8;
+            // 
+            // Exitbtn
+            // 
+            this.Exitbtn.Location = new System.Drawing.Point(44, 392);
+            this.Exitbtn.Name = "Exitbtn";
+            this.Exitbtn.Size = new System.Drawing.Size(138, 46);
+            this.Exitbtn.TabIndex = 10;
+            this.Exitbtn.Text = "Salir";
+            this.Exitbtn.UseVisualStyleBackColor = true;
+            this.Exitbtn.Click += new System.EventHandler(this.Exitbtn_Click);
             // 
             // dataGridView1
             // 
@@ -144,46 +147,31 @@
             this.nombreDataGridViewTextBoxColumn,
             this.direccionDataGridViewTextBoxColumn,
             this.horarioDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.sucursalBindingSource1;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 176);
+            this.dataGridView1.DataSource = this.sucursalBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 181);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(776, 210);
-            this.dataGridView1.TabIndex = 9;
+            this.dataGridView1.Size = new System.Drawing.Size(776, 205);
+            this.dataGridView1.TabIndex = 11;
+            // 
+            // bancoDataSet5
+            // 
+            this.bancoDataSet5.DataSetName = "bancoDataSet5";
+            this.bancoDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // sucursalBindingSource
             // 
             this.sucursalBindingSource.DataMember = "sucursal";
-            this.sucursalBindingSource.DataSource = this.bancoDataSet;
-            // 
-            // bancoDataSet
-            // 
-            this.bancoDataSet.DataSetName = "bancoDataSet";
-            this.bancoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.sucursalBindingSource.DataSource = this.bancoDataSet5;
             // 
             // sucursalTableAdapter
             // 
             this.sucursalTableAdapter.ClearBeforeFill = true;
             // 
-            // bancoDataSet2
-            // 
-            this.bancoDataSet2.DataSetName = "bancoDataSet2";
-            this.bancoDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // sucursalBindingSource1
-            // 
-            this.sucursalBindingSource1.DataMember = "sucursal";
-            this.sucursalBindingSource1.DataSource = this.bancoDataSet2;
-            // 
-            // sucursalTableAdapter1
-            // 
-            this.sucursalTableAdapter1.ClearBeforeFill = true;
-            // 
             // idsucursalDataGridViewTextBoxColumn
             // 
             this.idsucursalDataGridViewTextBoxColumn.DataPropertyName = "id_sucursal";
-            this.idsucursalDataGridViewTextBoxColumn.FillWeight = 50F;
-            this.idsucursalDataGridViewTextBoxColumn.HeaderText = "Nº Sucursal";
+            this.idsucursalDataGridViewTextBoxColumn.HeaderText = "Nº sucursal";
             this.idsucursalDataGridViewTextBoxColumn.Name = "idsucursalDataGridViewTextBoxColumn";
             this.idsucursalDataGridViewTextBoxColumn.ReadOnly = true;
             this.idsucursalDataGridViewTextBoxColumn.Width = 90;
@@ -212,23 +200,13 @@
             this.horarioDataGridViewTextBoxColumn.ReadOnly = true;
             this.horarioDataGridViewTextBoxColumn.Width = 250;
             // 
-            // Exitbtn
-            // 
-            this.Exitbtn.Location = new System.Drawing.Point(44, 392);
-            this.Exitbtn.Name = "Exitbtn";
-            this.Exitbtn.Size = new System.Drawing.Size(138, 46);
-            this.Exitbtn.TabIndex = 10;
-            this.Exitbtn.Text = "Salir";
-            this.Exitbtn.UseVisualStyleBackColor = true;
-            this.Exitbtn.Click += new System.EventHandler(this.Exitbtn_Click);
-            // 
             // AgrSucursales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Exitbtn);
             this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.Exitbtn);
             this.Controls.Add(this.textNumSucs);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnAgregar);
@@ -244,10 +222,8 @@
             this.Text = "AgrSucursales";
             this.Load += new System.EventHandler(this.AgrSucursales_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bancoDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sucursalBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bancoDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bancoDataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sucursalBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -264,17 +240,14 @@
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textNumSucs;
+        private System.Windows.Forms.Button Exitbtn;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private bancoDataSet bancoDataSet;
+        private bancoDataSet5 bancoDataSet5;
         private System.Windows.Forms.BindingSource sucursalBindingSource;
-        private bancoDataSetTableAdapters.sucursalTableAdapter sucursalTableAdapter;
-        private bancoDataSet2 bancoDataSet2;
-        private System.Windows.Forms.BindingSource sucursalBindingSource1;
-        private bancoDataSet2TableAdapters.sucursalTableAdapter sucursalTableAdapter1;
+        private bancoDataSet5TableAdapters.sucursalTableAdapter sucursalTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idsucursalDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn direccionDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn horarioDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button Exitbtn;
     }
 }

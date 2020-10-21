@@ -81,6 +81,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>bancoDataSet4.xsd</DependentUpon>
     </Compile>
+    <Compile Include="bancoDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>bancoDataSet5.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Empleados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +182,17 @@
     </None>
     <None Include="bancoDataSet4.xss">
       <DependentUpon>bancoDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="bancoDataSet5.xsc">
+      <DependentUpon>bancoDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="bancoDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>bancoDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="bancoDataSet5.xss">
+      <DependentUpon>bancoDataSet5.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
