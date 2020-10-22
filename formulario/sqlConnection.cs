@@ -167,7 +167,7 @@ namespace formulario
         }
 
         public static void agrtrans(string Transaction,string AccountOrg,string AccountDest,string Date,
-            string Money,string typeTrans,string Descriprion)
+            string Money,string typeTrans,string Description)
         {
             string servidor = "localhost"; //Nombre o ip del servidor de MySQL
             string bd = "banco"; //Nombre de la base de datos
@@ -186,8 +186,9 @@ namespace formulario
 
             try
             {
-                string consulta = "insert into transaccion(id_transaaccion,id_cuenta,id_cuenta_dest,fecha,monto,tipo_transaccio,descripcion)" +
-                    "values('"+Transaction+"','"+AccountOrg+ "','"+AccountDest+ "','"+Date+ "','"+Money+ "','"+typeTrans+ "','"+Descriprion+"')";//Introduce datos a la bd
+                string consulta = "call verif_exis('"+Transaction+"','"+AccountOrg+"','"+AccountDest+"','"+Date+"','"+Money+"','"+typeTrans+"','"+Description+"')";
+                //string consulta = "insert into transaccion(id_transaaccion,id_cuenta,id_cuenta_dest,fecha,monto,tipo_transaccio,descripcion)" +
+                //    "values('"+Transaction+"','"+AccountOrg+ "','"+AccountDest+ "','"+Date+ "','"+Money+ "','"+typeTrans+ "','"+Descriprion+"')";//Introduce datos a la bd
                 MySqlCommand comando = new MySqlCommand(consulta); //Declaración SQL para ejecutar contra una base de datos MySQL
                 comando.Connection = conexionBD; //Establece la MySqlConnection utilizada por esta instancia de MySqlCommand
                 conexionBD.Open(); //Abre la conexión
@@ -197,8 +198,14 @@ namespace formulario
                 {
                     datos += reader.GetString(0) + "\n"; //Almacena cada registro con un salto de linea
                 }
-
-                MessageBox.Show("Agregado con exito!!"); //Imprime en cuadro de dialogo el resultado
+                if(datos == null)
+                {
+                    MessageBox.Show("Agregado con exito!!");//Imprime en cuadro de dialogo el resultado
+                }
+                else
+                {
+                    MessageBox.Show(datos);
+                }
             }
             catch (MySqlException ex)
             {
