@@ -82,3 +82,4 @@ C:\Users\Ulises Santiago CL\Desktop\GitHub\AdminBD\formulario\obj\Debug\formular
 C:\Users\Ulises Santiago CL\Desktop\GitHub\AdminBD\formulario\obj\Debug\formulario.csproj.CopyComplete
 C:\Users\Ulises Santiago CL\Desktop\GitHub\AdminBD\formulario\obj\Debug\formulario.exe
 C:\Users\Ulises Santiago CL\Desktop\GitHub\AdminBD\formulario\obj\Debug\formulario.pdb
+C:\Users\Ulises Santiago CL\Desktop\GitHub\AdminBD\formulario\obj\Debug\formulario.Inicio.resources

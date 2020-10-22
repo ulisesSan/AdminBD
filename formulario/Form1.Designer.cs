@@ -335,8 +335,13 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Prueba);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Cliente";
+            this.RightToLeftLayout = true;
             this.Text = "Clientes";
             this.Load += new System.EventHandler(this.Cliente_Load);
             this.ResumeLayout(false);

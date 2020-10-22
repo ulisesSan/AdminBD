@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
@@ -17,6 +10,7 @@ namespace formulario
         {
             InitializeComponent();
         }
+    
 
         private void Prueba_Click(object sender, EventArgs e)
         {
@@ -32,72 +26,17 @@ namespace formulario
             int contador = 0;//contador para verificar si ya se paso por algún if
 
             //Seccion de condicionales, para verificar que no quede algún dato sin llenar
-            if (Name == "")
+            if (Name == ""|| AP == ""|| Date == ""|| Mail == ""|| Sex == ""|| Phone == ""|| AccountType == ""|| Balance == ""|| Sucursal == ""|| NumCli == ""|| Direction == "")
             {
-                if (AP == "")
-                {
-
-                    if (Date == "")
-                    {
-
-                        if (Mail == "")
-                        {
-
-                            if (Sex == "")
-                            {
-
-                                if (Phone == "")
-                                {
-
-                                    if (Phone == "")
-                                    {
-
-                                        if (Account == "")
-                                        {
-
-                                            if (AccountType == "")
-                                            {
-
-                                                if (AccountType == "")
-                                                {
-
-                                                    if (Balance == "")
-                                                    {
-
-                                                        if (Sucursal == "")
-                                                        {
-
-                                                            if (NumCli == "")
-                                                            {
-
-                                                                if (Direction == "")
-                                                                {
-                                                                    MessageBox.Show("Debe de llenar todos los campos");
-                                                                    
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                }
+              MessageBox.Show("Debe de llenar todos los campos");
             }
 
             //Fin del area de condicionales
 
             else
             {
-                sqlConnection m = new sqlConnection();
-
                 sqlConnection.AgrClient(Name,AP,AccountType,Date,Balance,Mail,Sucursal,Sex,
-                    NumCli,Phone,Account,Direction);
+                NumCli,Phone,Account,Direction);
             }
 
             //Se borra el contenido de las cajas de texto
