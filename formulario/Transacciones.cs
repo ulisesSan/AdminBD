@@ -24,8 +24,8 @@ namespace formulario
 
         private void Transacciones_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'bancoDataSet4.transaccion' Puede moverla o quitarla según sea necesario.
-            this.transaccionTableAdapter.Fill(this.bancoDataSet4.transaccion);
+            // TODO: esta línea de código carga datos en la tabla 'transaccionesData.transaccion' Puede moverla o quitarla según sea necesario.
+            this.transaccionTableAdapter.Fill(this.transaccionesData.transaccion);
         }
 
         private void btnTrans_Click(object sender, EventArgs e)
@@ -38,17 +38,23 @@ namespace formulario
             string typeTrans = txtTypeTrans.Text;
             string Description = txtDescript.Text;
 
-            sqlConnection.agrtrans(Transaction,AccountOrg,AccountDest,Date,Money,typeTrans,Description);
-
-            this.transaccionTableAdapter.Fill(this.bancoDataSet4.transaccion);
-
-            txtDescript.Text = "";
-            txtNtrans.Text="";
-            txtAccountOrig.Text="";
-            txtAccountDest.Text = "";
-            txtdate.Text = "";
-            txtMoney.Text = "";
-            txtTypeTrans.Text = "";
+            if (Transaction == "" || AccountOrg == "" || AccountDest == "" || Date == "" || Money == "" || typeTrans == "" || Description == "")
+            {
+                MessageBox.Show("Debe de llenar todos los campos.");
+            }
+            else
+            {
+                
+                sqlConnection.agrtrans(Transaction, AccountOrg, AccountDest, Date, Money, typeTrans, Description);//Ingresa datos a la tala transaccion
+                this.transaccionTableAdapter.Fill(this.transaccionesData.transaccion);//actualiza tabla
+                txtDescript.Text = "";
+                txtNtrans.Text = "";
+                txtAccountOrig.Text = "";
+                txtAccountDest.Text = "";
+                txtdate.Text = "";
+                txtMoney.Text = "";
+                txtTypeTrans.Text = "";
+            }
         }
     }
 }

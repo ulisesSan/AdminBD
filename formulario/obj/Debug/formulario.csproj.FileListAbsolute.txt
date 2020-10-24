@@ -83,3 +83,32 @@ C:\Users\Ulises Santiago CL\Desktop\GitHub\AdminBD\formulario\obj\Debug\formular
 C:\Users\Ulises Santiago CL\Desktop\GitHub\AdminBD\formulario\obj\Debug\formulario.exe
 C:\Users\Ulises Santiago CL\Desktop\GitHub\AdminBD\formulario\obj\Debug\formulario.pdb
 C:\Users\Ulises Santiago CL\Desktop\GitHub\AdminBD\formulario\obj\Debug\formulario.Inicio.resources
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\formulario\bin\Debug\formulario.exe.config
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\formulario\bin\Debug\formulario.exe
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\formulario\bin\Debug\formulario.pdb
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\formulario\bin\Debug\MySql.Data.dll
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\formulario\bin\Debug\Google.Protobuf.dll
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\formulario\bin\Debug\Zstandard.Net.dll
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\formulario\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\formulario\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\formulario\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\formulario\bin\Debug\Renci.SshNet.dll
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\formulario\bin\Debug\System.Buffers.dll
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\formulario\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\formulario\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\formulario\bin\Debug\System.Memory.dll
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\formulario\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\formulario\bin\Debug\MySql.Data.xml
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\formulario\obj\Debug\formulario.csprojAssemblyReference.cache
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\formulario\obj\Debug\formulario.exe.config
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\formulario\obj\Debug\formulario.AgrSucursales.resources
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\formulario\obj\Debug\formulario.Empleados.resources
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\formulario\obj\Debug\formulario.Cliente.resources
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\formulario\obj\Debug\formulario.Inicio.resources
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\formulario\obj\Debug\formulario.Properties.Resources.resources
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\formulario\obj\Debug\formulario.Transacciones.resources
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\formulario\obj\Debug\formulario.csproj.GenerateResource.cache
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\formulario\obj\Debug\formulario.csproj.CoreCompileInputs.cache
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\formulario\obj\Debug\formulario.csproj.CopyComplete
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\formulario\obj\Debug\formulario.exe
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\formulario\obj\Debug\formulario.pdb

@@ -12,7 +12,7 @@ namespace formulario
 {
     class sqlConnection
     {
-        public datos()
+        public  void datos()
         {
             String contra;
             string usa;
@@ -225,7 +225,7 @@ namespace formulario
 
         public static int InicioSystem(string passwd, string user)
         {
-            contra = passwd;
+            //contra = passwd;
             string servidor = "localhost"; //Nombre o ip del servidor de MySQL
             string bd = "banco"; //Nombre de la base de datos
             string usuario = user; //Usuario de acceso a MySQL

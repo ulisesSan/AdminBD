@@ -143,7 +143,7 @@
             // 
             // btnAceptar
             // 
-            this.btnAceptar.Location = new System.Drawing.Point(570, 230);
+            this.btnAceptar.Location = new System.Drawing.Point(110, 224);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(162, 38);
             this.btnAceptar.TabIndex = 12;
@@ -153,9 +153,9 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(119, 232);
+            this.btnAgregar.Location = new System.Drawing.Point(523, 224);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(153, 35);
+            this.btnAgregar.Size = new System.Drawing.Size(153, 38);
             this.btnAgregar.TabIndex = 13;
             this.btnAgregar.Text = "Agregar empleado";
             this.btnAgregar.UseVisualStyleBackColor = true;

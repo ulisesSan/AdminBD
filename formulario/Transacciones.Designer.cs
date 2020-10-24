@@ -46,18 +46,18 @@
             this.btnTrans = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.bancoDataSet4 = new formulario.bancoDataSet4();
+            this.transaccionesData = new formulario.TransaccionesData();
             this.transaccionBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.transaccionTableAdapter = new formulario.bancoDataSet4TableAdapters.transaccionTableAdapter();
+            this.transaccionTableAdapter = new formulario.TransaccionesDataTableAdapters.transaccionTableAdapter();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idcuentaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idcuentadestDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.montoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tipotransaccioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipotransaccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bancoDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.transaccionesData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.transaccionBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -205,24 +205,24 @@
             this.idcuentadestDataGridViewTextBoxColumn,
             this.fechaDataGridViewTextBoxColumn,
             this.montoDataGridViewTextBoxColumn,
-            this.tipotransaccioDataGridViewTextBoxColumn,
+            this.tipotransaccionDataGridViewTextBoxColumn,
             this.descripcionDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.transaccionBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(286, 16);
+            this.dataGridView1.Location = new System.Drawing.Point(293, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(745, 334);
+            this.dataGridView1.Size = new System.Drawing.Size(738, 342);
             this.dataGridView1.TabIndex = 16;
             // 
-            // bancoDataSet4
+            // transaccionesData
             // 
-            this.bancoDataSet4.DataSetName = "bancoDataSet4";
-            this.bancoDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.transaccionesData.DataSetName = "TransaccionesData";
+            this.transaccionesData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // transaccionBindingSource
             // 
             this.transaccionBindingSource.DataMember = "transaccion";
-            this.transaccionBindingSource.DataSource = this.bancoDataSet4;
+            this.transaccionBindingSource.DataSource = this.transaccionesData;
             // 
             // transaccionTableAdapter
             // 
@@ -263,12 +263,12 @@
             this.montoDataGridViewTextBoxColumn.Name = "montoDataGridViewTextBoxColumn";
             this.montoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // tipotransaccioDataGridViewTextBoxColumn
+            // tipotransaccionDataGridViewTextBoxColumn
             // 
-            this.tipotransaccioDataGridViewTextBoxColumn.DataPropertyName = "tipo_transaccio";
-            this.tipotransaccioDataGridViewTextBoxColumn.HeaderText = "tipo_transaccio";
-            this.tipotransaccioDataGridViewTextBoxColumn.Name = "tipotransaccioDataGridViewTextBoxColumn";
-            this.tipotransaccioDataGridViewTextBoxColumn.ReadOnly = true;
+            this.tipotransaccionDataGridViewTextBoxColumn.DataPropertyName = "tipo_transaccion";
+            this.tipotransaccionDataGridViewTextBoxColumn.HeaderText = "tipo_transaccion";
+            this.tipotransaccionDataGridViewTextBoxColumn.Name = "tipotransaccionDataGridViewTextBoxColumn";
+            this.tipotransaccionDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // descripcionDataGridViewTextBoxColumn
             // 
@@ -305,7 +305,7 @@
             this.Text = "Transacciones";
             this.Load += new System.EventHandler(this.Transacciones_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bancoDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.transaccionesData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.transaccionBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -332,15 +332,15 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.DataGridViewTextBoxColumn idtransaaccionDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private bancoDataSet4 bancoDataSet4;
+        private TransaccionesData transaccionesData;
         private System.Windows.Forms.BindingSource transaccionBindingSource;
-        private bancoDataSet4TableAdapters.transaccionTableAdapter transaccionTableAdapter;
+        private TransaccionesDataTableAdapters.transaccionTableAdapter transaccionTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn idcuentaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idcuentadestDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fechaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn montoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tipotransaccioDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tipotransaccionDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn descripcionDataGridViewTextBoxColumn;
     }
 }

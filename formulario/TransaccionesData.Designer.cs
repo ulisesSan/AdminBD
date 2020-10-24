@@ -20,9 +20,9 @@ namespace formulario {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("bancoDataSet4")]
+    [global::System.Xml.Serialization.XmlRootAttribute("TransaccionesData")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class bancoDataSet4 : global::System.Data.DataSet {
+    public partial class TransaccionesData : global::System.Data.DataSet {
         
         private transaccionDataTable tabletransaccion;
         
@@ -30,7 +30,7 @@ namespace formulario {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public bancoDataSet4() {
+        public TransaccionesData() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace formulario {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected bancoDataSet4(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected TransaccionesData(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace formulario {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            bancoDataSet4 cln = ((bancoDataSet4)(base.Clone()));
+            TransaccionesData cln = ((TransaccionesData)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace formulario {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "bancoDataSet4";
+            this.DataSetName = "TransaccionesData";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/bancoDataSet4.xsd";
+            this.Namespace = "http://tempuri.org/TransaccionesData.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tabletransaccion = new transaccionDataTable();
@@ -225,7 +225,7 @@ namespace formulario {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            bancoDataSet4 ds = new bancoDataSet4();
+            TransaccionesData ds = new TransaccionesData();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -289,7 +289,7 @@ namespace formulario {
             
             private global::System.Data.DataColumn columnmonto;
             
-            private global::System.Data.DataColumn columntipo_transaccio;
+            private global::System.Data.DataColumn columntipo_transaccion;
             
             private global::System.Data.DataColumn columndescripcion;
             
@@ -368,9 +368,9 @@ namespace formulario {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn tipo_transaccioColumn {
+            public global::System.Data.DataColumn tipo_transaccionColumn {
                 get {
-                    return this.columntipo_transaccio;
+                    return this.columntipo_transaccion;
                 }
             }
             
@@ -419,7 +419,7 @@ namespace formulario {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public transaccionRow AddtransaccionRow(uint id_transaaccion, uint id_cuenta, uint id_cuenta_dest, System.DateTime fecha, int monto, string tipo_transaccio, string descripcion) {
+            public transaccionRow AddtransaccionRow(uint id_transaaccion, uint id_cuenta, uint id_cuenta_dest, System.DateTime fecha, decimal monto, string tipo_transaccion, string descripcion) {
                 transaccionRow rowtransaccionRow = ((transaccionRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         id_transaaccion,
@@ -427,7 +427,7 @@ namespace formulario {
                         id_cuenta_dest,
                         fecha,
                         monto,
-                        tipo_transaccio,
+                        tipo_transaccion,
                         descripcion};
                 rowtransaccionRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowtransaccionRow);
@@ -463,7 +463,7 @@ namespace formulario {
                 this.columnid_cuenta_dest = base.Columns["id_cuenta_dest"];
                 this.columnfecha = base.Columns["fecha"];
                 this.columnmonto = base.Columns["monto"];
-                this.columntipo_transaccio = base.Columns["tipo_transaccio"];
+                this.columntipo_transaccion = base.Columns["tipo_transaccion"];
                 this.columndescripcion = base.Columns["descripcion"];
             }
             
@@ -478,17 +478,17 @@ namespace formulario {
                 base.Columns.Add(this.columnid_cuenta_dest);
                 this.columnfecha = new global::System.Data.DataColumn("fecha", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnfecha);
-                this.columnmonto = new global::System.Data.DataColumn("monto", typeof(int), null, global::System.Data.MappingType.Element);
+                this.columnmonto = new global::System.Data.DataColumn("monto", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnmonto);
-                this.columntipo_transaccio = new global::System.Data.DataColumn("tipo_transaccio", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columntipo_transaccio);
+                this.columntipo_transaccion = new global::System.Data.DataColumn("tipo_transaccion", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columntipo_transaccion);
                 this.columndescripcion = new global::System.Data.DataColumn("descripcion", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columndescripcion);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid_transaaccion}, true));
                 this.columnid_transaaccion.AllowDBNull = false;
                 this.columnid_transaaccion.Unique = true;
-                this.columntipo_transaccio.MaxLength = 20;
+                this.columntipo_transaccion.MaxLength = 20;
                 this.columndescripcion.MaxLength = 30;
             }
             
@@ -557,7 +557,7 @@ namespace formulario {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                bancoDataSet4 ds = new bancoDataSet4();
+                TransaccionesData ds = new TransaccionesData();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -691,10 +691,10 @@ namespace formulario {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int monto {
+            public decimal monto {
                 get {
                     try {
-                        return ((int)(this[this.tabletransaccion.montoColumn]));
+                        return ((decimal)(this[this.tabletransaccion.montoColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("El valor de la columna \'monto\' de la tabla \'transaccion\' es DBNull.", e);
@@ -707,17 +707,17 @@ namespace formulario {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string tipo_transaccio {
+            public string tipo_transaccion {
                 get {
                     try {
-                        return ((string)(this[this.tabletransaccion.tipo_transaccioColumn]));
+                        return ((string)(this[this.tabletransaccion.tipo_transaccionColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'tipo_transaccio\' de la tabla \'transaccion\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'tipo_transaccion\' de la tabla \'transaccion\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tabletransaccion.tipo_transaccioColumn] = value;
+                    this[this.tabletransaccion.tipo_transaccionColumn] = value;
                 }
             }
             
@@ -787,14 +787,14 @@ namespace formulario {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool Istipo_transaccioNull() {
-                return this.IsNull(this.tabletransaccion.tipo_transaccioColumn);
+            public bool Istipo_transaccionNull() {
+                return this.IsNull(this.tabletransaccion.tipo_transaccionColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void Settipo_transaccioNull() {
-                this[this.tabletransaccion.tipo_transaccioColumn] = global::System.Convert.DBNull;
+            public void Settipo_transaccionNull() {
+                this[this.tabletransaccion.tipo_transaccionColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -845,7 +845,7 @@ namespace formulario {
         }
     }
 }
-namespace formulario.bancoDataSet4TableAdapters {
+namespace formulario.TransaccionesDataTableAdapters {
     
     
     /// <summary>
@@ -974,12 +974,12 @@ namespace formulario.bancoDataSet4TableAdapters {
             tableMapping.ColumnMappings.Add("id_cuenta_dest", "id_cuenta_dest");
             tableMapping.ColumnMappings.Add("fecha", "fecha");
             tableMapping.ColumnMappings.Add("monto", "monto");
-            tableMapping.ColumnMappings.Add("tipo_transaccio", "tipo_transaccio");
+            tableMapping.ColumnMappings.Add("tipo_transaccion", "tipo_transaccion");
             tableMapping.ColumnMappings.Add("descripcion", "descripcion");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `transaccion` WHERE ((`id_transaaccion` = @p1) AND ((@p2 = 1 AND `id_cuenta` IS NULL) OR (`id_cuenta` = @p3)) AND ((@p4 = 1 AND `id_cuenta_dest` IS NULL) OR (`id_cuenta_dest` = @p5)) AND ((@p6 = 1 AND `fecha` IS NULL) OR (`fecha` = @p7)) AND ((@p8 = 1 AND `monto` IS NULL) OR (`monto` = @p9)) AND ((@p10 = 1 AND `tipo_transaccio` IS NULL) OR (`tipo_transaccio` = @p11)) AND ((@p12 = 1 AND `descripcion` IS NULL) OR (`descripcion` = @p13)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `transaccion` WHERE ((`id_transaaccion` = @p1) AND ((@p2 = 1 AND `id_cuenta` IS NULL) OR (`id_cuenta` = @p3)) AND ((@p4 = 1 AND `id_cuenta_dest` IS NULL) OR (`id_cuenta_dest` = @p5)) AND ((@p6 = 1 AND `fecha` IS NULL) OR (`fecha` = @p7)) AND ((@p8 = 1 AND `monto` IS NULL) OR (`monto` = @p9)) AND ((@p10 = 1 AND `tipo_transaccion` IS NULL) OR (`tipo_transaccion` = @p11)) AND ((@p12 = 1 AND `descripcion` IS NULL) OR (`descripcion` = @p13)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             global::MySql.Data.MySqlClient.MySqlParameter param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p1";
@@ -1051,8 +1051,8 @@ namespace formulario.bancoDataSet4TableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p9";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.NewDecimal;
             param.IsNullable = true;
             param.SourceColumn = "monto";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
@@ -1062,7 +1062,7 @@ namespace formulario.bancoDataSet4TableAdapters {
             param.DbType = global::System.Data.DbType.Int32;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
             param.IsNullable = true;
-            param.SourceColumn = "tipo_transaccio";
+            param.SourceColumn = "tipo_transaccion";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             param.SourceColumnNullMapping = true;
             this._adapter.DeleteCommand.Parameters.Add(param);
@@ -1071,7 +1071,7 @@ namespace formulario.bancoDataSet4TableAdapters {
             param.DbType = global::System.Data.DbType.String;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
             param.IsNullable = true;
-            param.SourceColumn = "tipo_transaccio";
+            param.SourceColumn = "tipo_transaccion";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.DeleteCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
@@ -1094,7 +1094,7 @@ namespace formulario.bancoDataSet4TableAdapters {
             this._adapter.InsertCommand = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
             this._adapter.InsertCommand.CommandText = "INSERT INTO `transaccion` (`id_cuenta`, `id_cuenta_dest`, `fecha`, `monto`, `tipo" +
-                "_transaccio`, `descripcion`) VALUES (@p1, @p2, @p3, @p4, @p5, @p6)";
+                "_transaccion`, `descripcion`) VALUES (@p1, @p2, @p3, @p4, @p5, @p6)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p1";
@@ -1122,8 +1122,8 @@ namespace formulario.bancoDataSet4TableAdapters {
             this._adapter.InsertCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p4";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.NewDecimal;
             param.IsNullable = true;
             param.SourceColumn = "monto";
             param.SourceVersion = global::System.Data.DataRowVersion.Current;
@@ -1133,7 +1133,7 @@ namespace formulario.bancoDataSet4TableAdapters {
             param.DbType = global::System.Data.DbType.String;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
             param.IsNullable = true;
-            param.SourceColumn = "tipo_transaccio";
+            param.SourceColumn = "tipo_transaccion";
             param.SourceVersion = global::System.Data.DataRowVersion.Current;
             this._adapter.InsertCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
@@ -1146,7 +1146,7 @@ namespace formulario.bancoDataSet4TableAdapters {
             this._adapter.InsertCommand.Parameters.Add(param);
             this._adapter.UpdateCommand = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE `transaccion` SET `id_cuenta` = @p1, `id_cuenta_dest` = @p2, `fecha` = @p3, `monto` = @p4, `tipo_transaccio` = @p5, `descripcion` = @p6 WHERE ((`id_transaaccion` = @p7) AND ((@p8 = 1 AND `id_cuenta` IS NULL) OR (`id_cuenta` = @p9)) AND ((@p10 = 1 AND `id_cuenta_dest` IS NULL) OR (`id_cuenta_dest` = @p11)) AND ((@p12 = 1 AND `fecha` IS NULL) OR (`fecha` = @p13)) AND ((@p14 = 1 AND `monto` IS NULL) OR (`monto` = @p15)) AND ((@p16 = 1 AND `tipo_transaccio` IS NULL) OR (`tipo_transaccio` = @p17)) AND ((@p18 = 1 AND `descripcion` IS NULL) OR (`descripcion` = @p19)))";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE `transaccion` SET `id_cuenta` = @p1, `id_cuenta_dest` = @p2, `fecha` = @p3, `monto` = @p4, `tipo_transaccion` = @p5, `descripcion` = @p6 WHERE ((`id_transaaccion` = @p7) AND ((@p8 = 1 AND `id_cuenta` IS NULL) OR (`id_cuenta` = @p9)) AND ((@p10 = 1 AND `id_cuenta_dest` IS NULL) OR (`id_cuenta_dest` = @p11)) AND ((@p12 = 1 AND `fecha` IS NULL) OR (`fecha` = @p13)) AND ((@p14 = 1 AND `monto` IS NULL) OR (`monto` = @p15)) AND ((@p16 = 1 AND `tipo_transaccion` IS NULL) OR (`tipo_transaccion` = @p17)) AND ((@p18 = 1 AND `descripcion` IS NULL) OR (`descripcion` = @p19)))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p1";
@@ -1174,8 +1174,8 @@ namespace formulario.bancoDataSet4TableAdapters {
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p4";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.NewDecimal;
             param.IsNullable = true;
             param.SourceColumn = "monto";
             param.SourceVersion = global::System.Data.DataRowVersion.Current;
@@ -1185,7 +1185,7 @@ namespace formulario.bancoDataSet4TableAdapters {
             param.DbType = global::System.Data.DbType.String;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
             param.IsNullable = true;
-            param.SourceColumn = "tipo_transaccio";
+            param.SourceColumn = "tipo_transaccion";
             param.SourceVersion = global::System.Data.DataRowVersion.Current;
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
@@ -1266,8 +1266,8 @@ namespace formulario.bancoDataSet4TableAdapters {
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
             param.ParameterName = "@p15";
-            param.DbType = global::System.Data.DbType.Int32;
-            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
+            param.DbType = global::System.Data.DbType.Decimal;
+            param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.NewDecimal;
             param.IsNullable = true;
             param.SourceColumn = "monto";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
@@ -1277,7 +1277,7 @@ namespace formulario.bancoDataSet4TableAdapters {
             param.DbType = global::System.Data.DbType.Int32;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.Int32;
             param.IsNullable = true;
-            param.SourceColumn = "tipo_transaccio";
+            param.SourceColumn = "tipo_transaccion";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             param.SourceColumnNullMapping = true;
             this._adapter.UpdateCommand.Parameters.Add(param);
@@ -1286,7 +1286,7 @@ namespace formulario.bancoDataSet4TableAdapters {
             param.DbType = global::System.Data.DbType.String;
             param.MySqlDbType = global::MySql.Data.MySqlClient.MySqlDbType.VarChar;
             param.IsNullable = true;
-            param.SourceColumn = "tipo_transaccio";
+            param.SourceColumn = "tipo_transaccion";
             param.SourceVersion = global::System.Data.DataRowVersion.Original;
             this._adapter.UpdateCommand.Parameters.Add(param);
             param = new global::MySql.Data.MySqlClient.MySqlParameter();
@@ -1312,7 +1312,7 @@ namespace formulario.bancoDataSet4TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::MySql.Data.MySqlClient.MySqlConnection();
-            this._connection.ConnectionString = global::formulario.Properties.Settings.Default.sucursaldataconection;
+            this._connection.ConnectionString = global::formulario.Properties.Settings.Default.Transacciones;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1322,7 +1322,7 @@ namespace formulario.bancoDataSet4TableAdapters {
             this._commandCollection[0] = new global::MySql.Data.MySqlClient.MySqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT `id_transaaccion`, `id_cuenta`, `id_cuenta_dest`, `fecha`, `monto`, `tipo_" +
-                "transaccio`, `descripcion` FROM `transaccion`";
+                "transaccion`, `descripcion` FROM `transaccion`";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1330,7 +1330,7 @@ namespace formulario.bancoDataSet4TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(bancoDataSet4.transaccionDataTable dataTable) {
+        public virtual int Fill(TransaccionesData.transaccionDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1343,9 +1343,9 @@ namespace formulario.bancoDataSet4TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual bancoDataSet4.transaccionDataTable GetData() {
+        public virtual TransaccionesData.transaccionDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            bancoDataSet4.transaccionDataTable dataTable = new bancoDataSet4.transaccionDataTable();
+            TransaccionesData.transaccionDataTable dataTable = new TransaccionesData.transaccionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -1353,14 +1353,14 @@ namespace formulario.bancoDataSet4TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(bancoDataSet4.transaccionDataTable dataTable) {
+        public virtual int Update(TransaccionesData.transaccionDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(bancoDataSet4 dataSet) {
+        public virtual int Update(TransaccionesData dataSet) {
             return this.Adapter.Update(dataSet, "transaccion");
         }
         
@@ -1383,7 +1383,7 @@ namespace formulario.bancoDataSet4TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(uint p1, global::System.Nullable<uint> p3, global::System.Nullable<uint> p5, global::System.Nullable<global::System.DateTime> p7, global::System.Nullable<int> p9, string p11, string p13) {
+        public virtual int Delete(uint p1, global::System.Nullable<uint> p3, global::System.Nullable<uint> p5, global::System.Nullable<global::System.DateTime> p7, global::System.Nullable<decimal> p9, string p11, string p13) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((uint)(p1));
             if ((p3.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
@@ -1411,7 +1411,7 @@ namespace formulario.bancoDataSet4TableAdapters {
             }
             if ((p9.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((int)(p9.Value));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((decimal)(p9.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
@@ -1453,7 +1453,7 @@ namespace formulario.bancoDataSet4TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(global::System.Nullable<uint> p1, global::System.Nullable<uint> p2, global::System.Nullable<global::System.DateTime> p3, global::System.Nullable<int> p4, string p5, string p6) {
+        public virtual int Insert(global::System.Nullable<uint> p1, global::System.Nullable<uint> p2, global::System.Nullable<global::System.DateTime> p3, global::System.Nullable<decimal> p4, string p5, string p6) {
             if ((p1.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((uint)(p1.Value));
             }
@@ -1473,7 +1473,7 @@ namespace formulario.bancoDataSet4TableAdapters {
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             if ((p4.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((int)(p4.Value));
+                this.Adapter.InsertCommand.Parameters[3].Value = ((decimal)(p4.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
@@ -1510,7 +1510,7 @@ namespace formulario.bancoDataSet4TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(global::System.Nullable<uint> p1, global::System.Nullable<uint> p2, global::System.Nullable<global::System.DateTime> p3, global::System.Nullable<int> p4, string p5, string p6, uint p7, global::System.Nullable<uint> p9, global::System.Nullable<uint> p11, global::System.Nullable<global::System.DateTime> p13, global::System.Nullable<int> p15, string p17, string p19) {
+        public virtual int Update(global::System.Nullable<uint> p1, global::System.Nullable<uint> p2, global::System.Nullable<global::System.DateTime> p3, global::System.Nullable<decimal> p4, string p5, string p6, uint p7, global::System.Nullable<uint> p9, global::System.Nullable<uint> p11, global::System.Nullable<global::System.DateTime> p13, global::System.Nullable<decimal> p15, string p17, string p19) {
             if ((p1.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = ((uint)(p1.Value));
             }
@@ -1530,7 +1530,7 @@ namespace formulario.bancoDataSet4TableAdapters {
                 this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             if ((p4.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(p4.Value));
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((decimal)(p4.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
@@ -1574,7 +1574,7 @@ namespace formulario.bancoDataSet4TableAdapters {
             }
             if ((p15.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((int)(p15.Value));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((decimal)(p15.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(1));
@@ -1704,7 +1704,7 @@ namespace formulario.bancoDataSet4TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(bancoDataSet4 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(TransaccionesData dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._transaccionTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.transaccion.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -1723,7 +1723,7 @@ namespace formulario.bancoDataSet4TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(bancoDataSet4 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(TransaccionesData dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._transaccionTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.transaccion.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -1741,7 +1741,7 @@ namespace formulario.bancoDataSet4TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(bancoDataSet4 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(TransaccionesData dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._transaccionTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.transaccion.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -1783,7 +1783,7 @@ namespace formulario.bancoDataSet4TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(bancoDataSet4 dataSet) {
+        public virtual int UpdateAll(TransaccionesData dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="bancoDataSet6" targetNamespace="http://tempuri.org/bancoDataSet6.xsd" xmlns:mstns="http://tempuri.org/bancoDataSet6.xsd" xmlns="http://tempuri.org/bancoDataSet6.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Transacciones" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Transacciones (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.formulario.Properties.Settings.GlobalReference.Default.Transacciones" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="transaccionTableAdapter" GeneratorDataComponentClassName="transaccionTableAdapter" Name="transaccion" UserDataComponentName="transaccionTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Transacciones (Settings)" DbObjectName="banco.transaccion" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id_transaaccion`, `id_cuenta`, `id_cuenta_dest`, `fecha`, `monto`, `tipo_transaccion`, `descripcion` FROM `transaccion`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="bancoDataSet6" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="bancoDataSet6" msprop:Generator_UserDSName="bancoDataSet6">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="transaccion" msprop:Generator_TableClassName="transaccionDataTable" msprop:Generator_TableVarName="tabletransaccion" msprop:Generator_TablePropName="transaccion" msprop:Generator_RowDeletingName="transaccionRowDeleting" msprop:Generator_RowChangingName="transaccionRowChanging" msprop:Generator_RowEvHandlerName="transaccionRowChangeEventHandler" msprop:Generator_RowDeletedName="transaccionRowDeleted" msprop:Generator_UserTableName="transaccion" msprop:Generator_RowChangedName="transaccionRowChanged" msprop:Generator_RowEvArgName="transaccionRowChangeEvent" msprop:Generator_RowClassName="transaccionRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

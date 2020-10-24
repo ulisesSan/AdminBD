@@ -54,5 +54,16 @@ namespace formulario.Properties {
                 return ((string)(this["sucursaldataconection"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=ulises;password=a;persistsecurityinfo=True;database=banc" +
+            "o")]
+        public string Transacciones {
+            get {
+                return ((string)(this["Transacciones"]));
+            }
+        }
     }
 }

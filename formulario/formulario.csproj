@@ -79,25 +79,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>bancoDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="bancoDataSet1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>bancoDataSet1.xsd</DependentUpon>
-    </Compile>
     <Compile Include="bancoDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>bancoDataSet2.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="bancoDataSet3.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>bancoDataSet3.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="bancoDataSet4.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>bancoDataSet4.xsd</DependentUpon>
     </Compile>
     <Compile Include="bancoDataSet5.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -130,6 +115,11 @@
     </Compile>
     <Compile Include="Transacciones.Designer.cs">
       <DependentUpon>Transacciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransaccionesData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TransaccionesData.xsd</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AgrSucursales.resx">
       <DependentUpon>AgrSucursales.cs</DependentUpon>
@@ -166,17 +156,6 @@
     <None Include="bancoDataSet.xss">
       <DependentUpon>bancoDataSet.xsd</DependentUpon>
     </None>
-    <None Include="bancoDataSet1.xsc">
-      <DependentUpon>bancoDataSet1.xsd</DependentUpon>
-    </None>
-    <None Include="bancoDataSet1.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>bancoDataSet1.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="bancoDataSet1.xss">
-      <DependentUpon>bancoDataSet1.xsd</DependentUpon>
-    </None>
     <None Include="bancoDataSet2.xsc">
       <DependentUpon>bancoDataSet2.xsd</DependentUpon>
     </None>
@@ -187,28 +166,6 @@
     </None>
     <None Include="bancoDataSet2.xss">
       <DependentUpon>bancoDataSet2.xsd</DependentUpon>
-    </None>
-    <None Include="bancoDataSet3.xsc">
-      <DependentUpon>bancoDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="bancoDataSet3.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>bancoDataSet3.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="bancoDataSet3.xss">
-      <DependentUpon>bancoDataSet3.xsd</DependentUpon>
-    </None>
-    <None Include="bancoDataSet4.xsc">
-      <DependentUpon>bancoDataSet4.xsd</DependentUpon>
-    </None>
-    <None Include="bancoDataSet4.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>bancoDataSet4.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="bancoDataSet4.xss">
-      <DependentUpon>bancoDataSet4.xsd</DependentUpon>
     </None>
     <None Include="bancoDataSet5.xsc">
       <DependentUpon>bancoDataSet5.xsd</DependentUpon>
@@ -230,6 +187,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="TransaccionesData.xsc">
+      <DependentUpon>TransaccionesData.xsd</DependentUpon>
+    </None>
+    <None Include="TransaccionesData.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TransaccionesData.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TransaccionesData.xss">
+      <DependentUpon>TransaccionesData.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
