@@ -23,7 +23,7 @@ namespace formulario
             String Phone = textPhone.Text; string Direction = textDirection.Text;
             //Variables provenientes de las cajas de texto
 
-            int contador = 0;//contador para verificar si ya se paso por algún if
+            //contador para verificar si ya se paso por algún if
 
             //Seccion de condicionales, para verificar que no quede algún dato sin llenar
             if (Name == ""|| AP == ""|| Date == ""|| Mail == ""|| Sex == ""|| Phone == ""|| AccountType == ""|| Balance == ""|| Sucursal == ""|| NumCli == ""|| Direction == "")

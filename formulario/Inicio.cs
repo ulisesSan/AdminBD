@@ -12,8 +12,7 @@ namespace formulario
 {
     public partial class Inicio : Form
     {
-        string usuario;
-        string contraseña;
+        
         public Inicio()
         {
             InitializeComponent();

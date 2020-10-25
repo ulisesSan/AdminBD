@@ -12,11 +12,6 @@ namespace formulario
 {
     class sqlConnection
     {
-        public  void datos()
-        {
-            String contra;
-            string usa;
-        }
         public static int AgrClient(string Name, string AP, string AccountType, String Date,
             String Balance, String Mail, string Sucursal, String Sex, String NumCli, String Phone,
             string Account, string Direction)
@@ -78,6 +73,7 @@ namespace formulario
             if (nombre == "" || AP == "" || fech == "" || correo == "" || telefono == "")
             {
                 MessageBox.Show("Debe de llenar todos los campos");
+                
             }
             else
             {
@@ -99,14 +95,26 @@ namespace formulario
                 try
                 {
                     //string insertar = "call in_emp('" + nombre + "','" + AP + "','" + fech + "','" + correo + "','" + telefono + "','" + suc + "')";
-                    string insertar = " insert into personal (nombre,Apellidos,fech_nac,correo,telefono,id_sucursal) values ('" + nombre + "','" + AP + "','" + fech + "','" + correo + "','" + telefono + "','" + suc + "')"; //Consulta a MySQL (Introduce datos a la bd)
+                    //string insertar = " insert into personal (nombre,Apellidos,fech_nac,correo,telefono,id_sucursal) values ('" + nombre + "','" + AP + "','" + fech + "','" + correo + "','" + telefono + "','" + suc + "')"; //Consulta a MySQL (Introduce datos a la bd)
+                    string insertar = "call verif_exits_sucs('" + nombre + "','" + AP + "','" + fech + "','" + correo + "','" + telefono + "','" + suc + "')";
                     MySqlCommand comando = new MySqlCommand(insertar); //Declaración SQL para ejecutar contra una base de datos MySQL
                     comando.Connection = conexionBD; //Establece la MySqlConnection utilizada por esta instancia de MySqlCommand
                     conexionBD.Open(); //Abre la conexión
                     reader = comando.ExecuteReader(); //Ejecuta la consulta y crea un MySqlDataReader
-
-                    MessageBox.Show("Empleado agregado");
-                    //MessageBox.Show("Registro echo con exito!!"); //Imprime en cuadro de dialogo el resultado
+                    while (reader.Read())
+                    {
+                        datos += reader.GetString(0);
+                    }
+                    if (datos != null)
+                    {
+                        MessageBox.Show(datos);
+                        
+                    }
+                    else
+                    {
+                        MessageBox.Show("Empleado agregado");//Imprime en cuadro de dialogo el resultado
+                        
+                    }
                 }
                 catch (MySqlException ex)
                 {

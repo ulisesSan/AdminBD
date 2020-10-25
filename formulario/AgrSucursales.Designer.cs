@@ -40,21 +40,22 @@
             this.textNumSucs = new System.Windows.Forms.TextBox();
             this.Exitbtn = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.bancoDataSet5 = new formulario.bancoDataSet5();
             this.sucursalBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bancoDataSet5 = new formulario.bancoDataSet5();
             this.sucursalTableAdapter = new formulario.bancoDataSet5TableAdapters.sucursalTableAdapter();
             this.idsucursalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.direccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.horarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bancoDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sucursalBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bancoDataSet5)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(41, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 13);
@@ -71,6 +72,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(41, 72);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 13);
@@ -87,6 +89,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(41, 104);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 13);
@@ -102,17 +105,23 @@
             // 
             // btnAgregar
             // 
+            this.btnAgregar.BackColor = System.Drawing.Color.Transparent;
+            this.btnAgregar.BackgroundImage = global::formulario.Properties.Resources.button;
+            this.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAgregar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnAgregar.Location = new System.Drawing.Point(607, 392);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(163, 46);
             this.btnAgregar.TabIndex = 6;
             this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Location = new System.Drawing.Point(41, 142);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(101, 13);
@@ -128,12 +137,17 @@
             // 
             // Exitbtn
             // 
+            this.Exitbtn.BackColor = System.Drawing.Color.Transparent;
+            this.Exitbtn.BackgroundImage = global::formulario.Properties.Resources.button;
+            this.Exitbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Exitbtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Exitbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Exitbtn.Location = new System.Drawing.Point(44, 392);
             this.Exitbtn.Name = "Exitbtn";
             this.Exitbtn.Size = new System.Drawing.Size(138, 46);
             this.Exitbtn.TabIndex = 10;
             this.Exitbtn.Text = "Salir";
-            this.Exitbtn.UseVisualStyleBackColor = true;
+            this.Exitbtn.UseVisualStyleBackColor = false;
             this.Exitbtn.Click += new System.EventHandler(this.Exitbtn_Click);
             // 
             // dataGridView1
@@ -148,21 +162,23 @@
             this.direccionDataGridViewTextBoxColumn,
             this.horarioDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.sucursalBindingSource;
+            this.dataGridView1.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.dataGridView1.Location = new System.Drawing.Point(12, 181);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.Size = new System.Drawing.Size(776, 205);
             this.dataGridView1.TabIndex = 11;
-            // 
-            // bancoDataSet5
-            // 
-            this.bancoDataSet5.DataSetName = "bancoDataSet5";
-            this.bancoDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // sucursalBindingSource
             // 
             this.sucursalBindingSource.DataMember = "sucursal";
             this.sucursalBindingSource.DataSource = this.bancoDataSet5;
+            // 
+            // bancoDataSet5
+            // 
+            this.bancoDataSet5.DataSetName = "bancoDataSet5";
+            this.bancoDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // sucursalTableAdapter
             // 
@@ -190,7 +206,7 @@
             this.direccionDataGridViewTextBoxColumn.HeaderText = "Direccion";
             this.direccionDataGridViewTextBoxColumn.Name = "direccionDataGridViewTextBoxColumn";
             this.direccionDataGridViewTextBoxColumn.ReadOnly = true;
-            this.direccionDataGridViewTextBoxColumn.Width = 250;
+            this.direccionDataGridViewTextBoxColumn.Width = 280;
             // 
             // horarioDataGridViewTextBoxColumn
             // 
@@ -204,6 +220,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::formulario.Properties.Resources.fondo;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Exitbtn);
@@ -219,11 +236,11 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AgrSucursales";
-            this.Text = "AgrSucursales";
+            this.Text = "Agregar Sucursales";
             this.Load += new System.EventHandler(this.AgrSucursales_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bancoDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sucursalBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bancoDataSet5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

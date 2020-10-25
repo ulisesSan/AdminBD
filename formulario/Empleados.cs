@@ -24,6 +24,8 @@ namespace formulario
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+            int back;
+
             string nombre = tBNomEmp.Text;
             string AP = tBAP.Text;
             string fech = tBFech.Text;
@@ -32,6 +34,15 @@ namespace formulario
             string idsusc = tBIDSUC.Text;
 
             sqlConnection.agremp(nombre,AP,fech,correo,phone,idsusc);
+            
+                tBNomEmp.Text = "";
+                tBAP.Text = "";
+                tBFech.Text = "";
+                tBEmpMail.Text = "";
+                tBPhone.Text = "";
+                tBIDSUC.Text = "";
+            
+            
         }
     }
 }

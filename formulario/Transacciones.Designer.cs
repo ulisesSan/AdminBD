@@ -46,8 +46,8 @@
             this.btnTrans = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.transaccionesData = new formulario.TransaccionesData();
             this.transaccionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.transaccionesData = new formulario.TransaccionesData();
             this.transaccionTableAdapter = new formulario.TransaccionesDataTableAdapters.transaccionTableAdapter();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idcuentaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,13 +57,14 @@
             this.tipotransaccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.transaccionesData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.transaccionBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.transaccionesData)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(38, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 13);
@@ -73,6 +74,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(38, 78);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 13);
@@ -82,6 +84,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(38, 115);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(78, 13);
@@ -91,6 +94,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Location = new System.Drawing.Point(38, 155);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(98, 13);
@@ -100,6 +104,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Location = new System.Drawing.Point(38, 192);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(37, 13);
@@ -109,6 +114,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Location = new System.Drawing.Point(38, 231);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(101, 13);
@@ -118,6 +124,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Location = new System.Drawing.Point(38, 260);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(63, 13);
@@ -175,22 +182,30 @@
             // 
             // btnTrans
             // 
+            this.btnTrans.BackColor = System.Drawing.Color.Transparent;
+            this.btnTrans.BackgroundImage = global::formulario.Properties.Resources.button;
+            this.btnTrans.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTrans.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnTrans.Location = new System.Drawing.Point(634, 360);
             this.btnTrans.Name = "btnTrans";
             this.btnTrans.Size = new System.Drawing.Size(118, 38);
             this.btnTrans.TabIndex = 14;
             this.btnTrans.Text = "Aceptar";
-            this.btnTrans.UseVisualStyleBackColor = true;
+            this.btnTrans.UseVisualStyleBackColor = false;
             this.btnTrans.Click += new System.EventHandler(this.btnTrans_Click);
             // 
             // btnExit
             // 
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.BackgroundImage = global::formulario.Properties.Resources.button;
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnExit.Location = new System.Drawing.Point(108, 360);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(112, 37);
             this.btnExit.TabIndex = 15;
             this.btnExit.Text = "Salir";
-            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // dataGridView1
@@ -198,6 +213,7 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -211,18 +227,20 @@
             this.dataGridView1.Location = new System.Drawing.Point(293, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dataGridView1.Size = new System.Drawing.Size(738, 342);
             this.dataGridView1.TabIndex = 16;
-            // 
-            // transaccionesData
-            // 
-            this.transaccionesData.DataSetName = "TransaccionesData";
-            this.transaccionesData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // transaccionBindingSource
             // 
             this.transaccionBindingSource.DataMember = "transaccion";
             this.transaccionBindingSource.DataSource = this.transaccionesData;
+            // 
+            // transaccionesData
+            // 
+            this.transaccionesData.DataSetName = "TransaccionesData";
+            this.transaccionesData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // transaccionTableAdapter
             // 
@@ -231,56 +249,64 @@
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "id_transaaccion";
-            this.dataGridViewTextBoxColumn1.HeaderText = "id_transaaccion";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Nº detransaaccion";
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 90;
             // 
             // idcuentaDataGridViewTextBoxColumn
             // 
             this.idcuentaDataGridViewTextBoxColumn.DataPropertyName = "id_cuenta";
-            this.idcuentaDataGridViewTextBoxColumn.HeaderText = "id_cuenta";
+            this.idcuentaDataGridViewTextBoxColumn.HeaderText = "Nº de cuenta origen";
             this.idcuentaDataGridViewTextBoxColumn.Name = "idcuentaDataGridViewTextBoxColumn";
             this.idcuentaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.idcuentaDataGridViewTextBoxColumn.Width = 90;
             // 
             // idcuentadestDataGridViewTextBoxColumn
             // 
             this.idcuentadestDataGridViewTextBoxColumn.DataPropertyName = "id_cuenta_dest";
-            this.idcuentadestDataGridViewTextBoxColumn.HeaderText = "id_cuenta_dest";
+            this.idcuentadestDataGridViewTextBoxColumn.FillWeight = 90F;
+            this.idcuentadestDataGridViewTextBoxColumn.HeaderText = "Nº de cuenta destino";
             this.idcuentadestDataGridViewTextBoxColumn.Name = "idcuentadestDataGridViewTextBoxColumn";
             this.idcuentadestDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // fechaDataGridViewTextBoxColumn
             // 
-            this.fechaDataGridViewTextBoxColumn.DataPropertyName = "fecha";
+            this.fechaDataGridViewTextBoxColumn.DataPropertyName = "Fecha";
             this.fechaDataGridViewTextBoxColumn.HeaderText = "fecha";
             this.fechaDataGridViewTextBoxColumn.Name = "fechaDataGridViewTextBoxColumn";
             this.fechaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.fechaDataGridViewTextBoxColumn.Width = 90;
             // 
             // montoDataGridViewTextBoxColumn
             // 
             this.montoDataGridViewTextBoxColumn.DataPropertyName = "monto";
-            this.montoDataGridViewTextBoxColumn.HeaderText = "monto";
+            this.montoDataGridViewTextBoxColumn.HeaderText = "Monto";
             this.montoDataGridViewTextBoxColumn.Name = "montoDataGridViewTextBoxColumn";
             this.montoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.montoDataGridViewTextBoxColumn.Width = 90;
             // 
             // tipotransaccionDataGridViewTextBoxColumn
             // 
             this.tipotransaccionDataGridViewTextBoxColumn.DataPropertyName = "tipo_transaccion";
-            this.tipotransaccionDataGridViewTextBoxColumn.HeaderText = "tipo_transaccion";
+            this.tipotransaccionDataGridViewTextBoxColumn.HeaderText = "Tipo de transaccion";
             this.tipotransaccionDataGridViewTextBoxColumn.Name = "tipotransaccionDataGridViewTextBoxColumn";
             this.tipotransaccionDataGridViewTextBoxColumn.ReadOnly = true;
+            this.tipotransaccionDataGridViewTextBoxColumn.Width = 150;
             // 
             // descripcionDataGridViewTextBoxColumn
             // 
             this.descripcionDataGridViewTextBoxColumn.DataPropertyName = "descripcion";
-            this.descripcionDataGridViewTextBoxColumn.HeaderText = "descripcion";
+            this.descripcionDataGridViewTextBoxColumn.HeaderText = "Descripcion";
             this.descripcionDataGridViewTextBoxColumn.Name = "descripcionDataGridViewTextBoxColumn";
             this.descripcionDataGridViewTextBoxColumn.ReadOnly = true;
+            this.descripcionDataGridViewTextBoxColumn.Width = 200;
             // 
             // Transacciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::formulario.Properties.Resources.fondo;
             this.ClientSize = new System.Drawing.Size(1032, 450);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnExit);
@@ -305,8 +331,8 @@
             this.Text = "Transacciones";
             this.Load += new System.EventHandler(this.Transacciones_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.transaccionesData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.transaccionBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.transaccionesData)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

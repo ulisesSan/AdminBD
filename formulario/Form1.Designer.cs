@@ -62,31 +62,45 @@
             // 
             // Prueba
             // 
+            this.Prueba.AccessibleDescription = "Regustra a un nuevo cliente con su cuenta";
+            this.Prueba.BackColor = System.Drawing.Color.Transparent;
+            this.Prueba.BackgroundImage = global::formulario.Properties.Resources.button;
+            this.Prueba.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Prueba.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Prueba.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Prueba.ForeColor = System.Drawing.Color.Transparent;
+            this.Prueba.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Prueba.Location = new System.Drawing.Point(222, 403);
             this.Prueba.Name = "Prueba";
             this.Prueba.Size = new System.Drawing.Size(154, 54);
             this.Prueba.TabIndex = 0;
             this.Prueba.Text = "Registrar";
-            this.Prueba.UseVisualStyleBackColor = true;
+            this.Prueba.UseVisualStyleBackColor = false;
             this.Prueba.Click += new System.EventHandler(this.Prueba_Click);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Location = new System.Drawing.Point(513, 301);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(181, 13);
+            this.label11.Size = new System.Drawing.Size(180, 13);
             this.label11.TabIndex = 22;
-            this.label11.Text = "*Asegurece de que la sucursal exista";
+            this.label11.Text = "*Asegúrese de que la sucursal exista";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 403);
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = global::formulario.Properties.Resources.button;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(32, 402);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(137, 41);
+            this.button1.Size = new System.Drawing.Size(137, 55);
             this.button1.TabIndex = 1;
             this.button1.Text = "Sucursal";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textSucursals
@@ -106,6 +120,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Location = new System.Drawing.Point(528, 221);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(52, 13);
@@ -115,6 +130,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Location = new System.Drawing.Point(528, 165);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(34, 13);
@@ -124,6 +140,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Location = new System.Drawing.Point(528, 100);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(79, 13);
@@ -133,6 +150,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Location = new System.Drawing.Point(528, 39);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(95, 13);
@@ -156,6 +174,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Location = new System.Drawing.Point(40, 371);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(49, 13);
@@ -165,6 +184,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Location = new System.Drawing.Point(40, 264);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(31, 13);
@@ -188,6 +208,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Location = new System.Drawing.Point(40, 206);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(41, 13);
@@ -204,6 +225,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(40, 151);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(106, 13);
@@ -220,6 +242,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(40, 96);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 13);
@@ -236,6 +259,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(40, 49);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 13);
@@ -252,6 +276,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Location = new System.Drawing.Point(40, 9);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(93, 13);
@@ -268,6 +293,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Location = new System.Drawing.Point(29, 316);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(52, 13);
@@ -283,28 +309,39 @@
             // 
             // btEMP
             // 
+            this.btEMP.BackColor = System.Drawing.Color.Transparent;
+            this.btEMP.BackgroundImage = global::formulario.Properties.Resources.button;
+            this.btEMP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btEMP.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btEMP.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btEMP.Location = new System.Drawing.Point(435, 403);
             this.btEMP.Name = "btEMP";
-            this.btEMP.Size = new System.Drawing.Size(127, 39);
+            this.btEMP.Size = new System.Drawing.Size(127, 54);
             this.btEMP.TabIndex = 29;
             this.btEMP.Text = "Agregar empleado";
-            this.btEMP.UseVisualStyleBackColor = true;
+            this.btEMP.UseVisualStyleBackColor = false;
             this.btEMP.Click += new System.EventHandler(this.btEMP_Click_1);
             // 
             // BtnTans
             // 
+            this.BtnTans.BackColor = System.Drawing.Color.Transparent;
+            this.BtnTans.BackgroundImage = global::formulario.Properties.Resources.button;
+            this.BtnTans.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnTans.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtnTans.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnTans.Location = new System.Drawing.Point(605, 402);
             this.BtnTans.Name = "BtnTans";
-            this.BtnTans.Size = new System.Drawing.Size(125, 40);
+            this.BtnTans.Size = new System.Drawing.Size(125, 55);
             this.BtnTans.TabIndex = 30;
             this.BtnTans.Text = "Transacciones";
-            this.BtnTans.UseVisualStyleBackColor = true;
+            this.BtnTans.UseVisualStyleBackColor = false;
             this.BtnTans.Click += new System.EventHandler(this.BtnTans_Click);
             // 
             // Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::formulario.Properties.Resources.fondo;
             this.ClientSize = new System.Drawing.Size(773, 470);
             this.Controls.Add(this.BtnTans);
             this.Controls.Add(this.btEMP);
