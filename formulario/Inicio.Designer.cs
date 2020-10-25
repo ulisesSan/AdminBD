@@ -81,6 +81,10 @@
             // iniBTN
             // 
             this.iniBTN.BackColor = System.Drawing.Color.Transparent;
+            this.iniBTN.BackgroundImage = global::formulario.Properties.Resources.button;
+            this.iniBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.iniBTN.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.iniBTN.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.iniBTN.Location = new System.Drawing.Point(231, 265);
             this.iniBTN.Name = "iniBTN";
             this.iniBTN.Size = new System.Drawing.Size(69, 26);
@@ -91,13 +95,18 @@
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.BackgroundImage = global::formulario.Properties.Resources.button;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button2.Location = new System.Drawing.Point(68, 265);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(69, 26);
             this.button2.TabIndex = 5;
             this.button2.Text = "Salir";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox1
