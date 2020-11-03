@@ -27,14 +27,14 @@ namespace formulario
 
 
             sqlConnection.agrSuc(Nombre,Direccion,Horario,Numero);
-            this.sucursalTableAdapter.Fill(this.bancoDataSet5.sucursal);
+
         }
 
 
         private void AgrSucursales_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'bancoDataSet5.sucursal' Puede moverla o quitarla según sea necesario.
-            this.sucursalTableAdapter.Fill(this.bancoDataSet5.sucursal);
+
 
         }
 

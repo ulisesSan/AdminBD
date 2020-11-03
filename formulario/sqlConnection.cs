@@ -14,7 +14,7 @@ namespace formulario
             string servidor = "localhost"; //Nombre o ip del servidor de MySQL
             string bd = "banco"; //Nombre de la base de datos
             string usuario = "ulises"; //Usuario de acceso a MySQL
-            string password = "a"; //Contraseña de usuario de acceso a MySQL
+            string password = "Solosoyyo12"; //Contraseña de usuario de acceso a MySQL
             string datos = null; //Variable para almacenar el resultado
 
             //Crearemos la cadena de conexión concatenando las variables
@@ -135,7 +135,7 @@ namespace formulario
                 string servidor = "localhost"; //Nombre o ip del servidor de MySQL
                 string bd = "banco"; //Nombre de la base de datos
                 string usuario = "ulises"; //Usuario de acceso a MySQL
-                string password = "a"; //Contraseña de usuario de acceso a MySQL
+                string password = "Solosoyyo12"; //Contraseña de usuario de acceso a MySQL
                 string datos = null; //Variable para almacenar el resultado
 
                 //Crearemos la cadena de conexión concatenando las variables
@@ -180,7 +180,7 @@ namespace formulario
             string servidor = "localhost"; //Nombre o ip del servidor de MySQL
             string bd = "banco"; //Nombre de la base de datos
             string usuario = "ulises"; //Usuario de acceso a MySQL
-            string password = "a"; //Contraseña de usuario de acceso a MySQL
+            string password = "Solosoyyo12"; //Contraseña de usuario de acceso a MySQL
             string datos = null; //Variable para almacenar el resultado
 
             //Crearemos la cadena de conexión concatenando las variables
@@ -229,7 +229,7 @@ namespace formulario
         {
             //contra = passwd;
             string servidor = "localhost"; //Nombre o ip del servidor de MySQL
-            string bd = "banco"; //Nombre de la base de datos
+            string bd = "Solosoyyo12"; //Nombre de la base de datos
             string usuario = user; //Usuario de acceso a MySQL
             string password = passwd; //Contraseña de usuario de acceso a MySQL
             string datos = null; //Variable para almacenar el resultado

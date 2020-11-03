@@ -24,7 +24,6 @@ namespace formulario
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            int back;
 
             string nombre = tBNomEmp.Text;
             string AP = tBAP.Text;

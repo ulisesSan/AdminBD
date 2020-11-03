@@ -28,24 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtUser = new System.Windows.Forms.TextBox();
             this.txtPasswd = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lol = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.iniBTN = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cmbUsuarios = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtUser
-            // 
-            this.txtUser.AcceptsReturn = true;
-            this.txtUser.AcceptsTab = true;
-            this.txtUser.Location = new System.Drawing.Point(105, 188);
-            this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(156, 20);
-            this.txtUser.TabIndex = 0;
             // 
             // txtPasswd
             // 
@@ -55,17 +46,17 @@
             this.txtPasswd.TabIndex = 1;
             this.txtPasswd.UseSystemPasswordChar = true;
             // 
-            // label1
+            // lol
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label1.Location = new System.Drawing.Point(160, 172);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 15);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Usuario";
+            this.lol.AutoSize = true;
+            this.lol.BackColor = System.Drawing.Color.Transparent;
+            this.lol.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lol.ForeColor = System.Drawing.Color.DarkBlue;
+            this.lol.Location = new System.Drawing.Point(160, 172);
+            this.lol.Name = "lol";
+            this.lol.Size = new System.Drawing.Size(49, 15);
+            this.lol.TabIndex = 2;
+            this.lol.Text = "Usuario";
             // 
             // label2
             // 
@@ -82,14 +73,16 @@
             // 
             this.iniBTN.BackColor = System.Drawing.Color.Transparent;
             this.iniBTN.BackgroundImage = global::formulario.Properties.Resources.button;
-            this.iniBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.iniBTN.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.iniBTN.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.iniBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.iniBTN.FlatAppearance.BorderSize = 0;
+            this.iniBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iniBTN.ForeColor = System.Drawing.Color.Transparent;
             this.iniBTN.Location = new System.Drawing.Point(231, 265);
             this.iniBTN.Name = "iniBTN";
             this.iniBTN.Size = new System.Drawing.Size(69, 26);
             this.iniBTN.TabIndex = 4;
             this.iniBTN.Text = "Iniciar secion";
+            this.iniBTN.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.iniBTN.UseVisualStyleBackColor = false;
             this.iniBTN.Click += new System.EventHandler(this.iniBTN_Click);
             // 
@@ -99,7 +92,8 @@
             this.button2.BackgroundImage = global::formulario.Properties.Resources.button;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button2.Location = new System.Drawing.Point(68, 265);
             this.button2.Name = "button2";
@@ -120,6 +114,20 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // cmbUsuarios
+            // 
+            this.cmbUsuarios.FormattingEnabled = true;
+            this.cmbUsuarios.Items.AddRange(new object[] {
+            "Administrador",
+            "Gerente",
+            "Empleado"});
+            this.cmbUsuarios.Location = new System.Drawing.Point(105, 190);
+            this.cmbUsuarios.Name = "cmbUsuarios";
+            this.cmbUsuarios.Size = new System.Drawing.Size(156, 21);
+            this.cmbUsuarios.TabIndex = 7;
+            this.cmbUsuarios.Text = "Usuario";
+            this.cmbUsuarios.SelectedIndexChanged += new System.EventHandler(this.cmbUsuarios_SelectedIndexChanged);
+            // 
             // Inicio
             // 
             this.AcceptButton = this.iniBTN;
@@ -128,13 +136,13 @@
             this.BackgroundImage = global::formulario.Properties.Resources.fondo;
             this.CancelButton = this.button2;
             this.ClientSize = new System.Drawing.Size(376, 317);
+            this.Controls.Add(this.cmbUsuarios);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.iniBTN);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lol);
             this.Controls.Add(this.txtPasswd);
-            this.Controls.Add(this.txtUser);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Inicio";
@@ -146,13 +154,12 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.TextBox txtPasswd;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lol;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button iniBTN;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ComboBox cmbUsuarios;
     }
 }

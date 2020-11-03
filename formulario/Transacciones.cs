@@ -25,7 +25,6 @@ namespace formulario
         private void Transacciones_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'transaccionesData.transaccion' Puede moverla o quitarla según sea necesario.
-            this.transaccionTableAdapter.Fill(this.transaccionesData.transaccion);
         }
 
         private void btnTrans_Click(object sender, EventArgs e)

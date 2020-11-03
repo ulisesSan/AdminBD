@@ -112,3 +112,34 @@ C:\Users\Ulises CL\Documents\GitHub\AdminBD\formulario\obj\Debug\formulario.cspr
 C:\Users\Ulises CL\Documents\GitHub\AdminBD\formulario\obj\Debug\formulario.csproj.CopyComplete
 C:\Users\Ulises CL\Documents\GitHub\AdminBD\formulario\obj\Debug\formulario.exe
 C:\Users\Ulises CL\Documents\GitHub\AdminBD\formulario\obj\Debug\formulario.pdb
+D:\GitHub\AdminBD\formulario\bin\Debug\formulario.exe.config
+D:\GitHub\AdminBD\formulario\bin\Debug\formulario.exe
+D:\GitHub\AdminBD\formulario\bin\Debug\formulario.pdb
+D:\GitHub\AdminBD\formulario\bin\Debug\MySql.Data.dll
+D:\GitHub\AdminBD\formulario\bin\Debug\Google.Protobuf.dll
+D:\GitHub\AdminBD\formulario\bin\Debug\Zstandard.Net.dll
+D:\GitHub\AdminBD\formulario\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\GitHub\AdminBD\formulario\bin\Debug\BouncyCastle.Crypto.dll
+D:\GitHub\AdminBD\formulario\bin\Debug\Ubiety.Dns.Core.dll
+D:\GitHub\AdminBD\formulario\bin\Debug\Renci.SshNet.dll
+D:\GitHub\AdminBD\formulario\bin\Debug\System.Memory.dll
+D:\GitHub\AdminBD\formulario\bin\Debug\System.Buffers.dll
+D:\GitHub\AdminBD\formulario\bin\Debug\K4os.Compression.LZ4.dll
+D:\GitHub\AdminBD\formulario\bin\Debug\K4os.Hash.xxHash.dll
+D:\GitHub\AdminBD\formulario\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\GitHub\AdminBD\formulario\bin\Debug\MySql.Data.xml
+D:\GitHub\AdminBD\formulario\obj\Debug\formulario.csprojAssemblyReference.cache
+D:\GitHub\AdminBD\formulario\obj\Debug\formulario.exe.config
+D:\GitHub\AdminBD\formulario\obj\Debug\formulario.AgrSucursales.resources
+D:\GitHub\AdminBD\formulario\obj\Debug\formulario.Empleados.resources
+D:\GitHub\AdminBD\formulario\obj\Debug\formulario.Cliente.resources
+D:\GitHub\AdminBD\formulario\obj\Debug\formulario.Inicio.resources
+D:\GitHub\AdminBD\formulario\obj\Debug\formulario.Properties.Resources.resources
+D:\GitHub\AdminBD\formulario\obj\Debug\formulario.Transacciones.resources
+D:\GitHub\AdminBD\formulario\obj\Debug\formulario.csproj.GenerateResource.cache
+D:\GitHub\AdminBD\formulario\obj\Debug\formulario.csproj.CoreCompileInputs.cache
+D:\GitHub\AdminBD\formulario\obj\Debug\formulario.csproj.CopyComplete
+D:\GitHub\AdminBD\formulario\obj\Debug\formulario.exe
+D:\GitHub\AdminBD\formulario\obj\Debug\formulario.pdb
+D:\GitHub\AdminBD\formulario\obj\Debug\formulario.Administrador.resources
+D:\GitHub\AdminBD\formulario\obj\Debug\formulario.Cliente_Menú.resources

@@ -12,6 +12,7 @@ namespace formulario
 {
     public partial class Inicio : Form
     {
+        int i= -1;
         
         public Inicio()
         {
@@ -29,20 +30,40 @@ namespace formulario
         {
             int inicio;
             string passwd = txtPasswd.Text;
-            string user = txtUser.Text;
-            inicio = sqlConnection.InicioSystem(passwd,user);
-            if (inicio == 0)
+
+            inicio = i;
+
+            switch (inicio)
             {
-                Cliente m = new Cliente();
-                m.Visible = true;
-                txtPasswd.Text = "";
-                txtUser.Text = "";
-                this.WindowState = FormWindowState.Minimized;
+                case 0 :
+                    Administrador m = new Administrador();
+                    m.Visible = true;
+                    break;
+
+                case 1:
+                    break;
+
+                case 2:
+                    break;
+
+                default:
+                    MessageBox.Show("Algo salió mal. \n Porfavor contacte al administrador");
+                    break;
             }
-            else
-            {
-                MessageBox.Show("Usuario y/o contraseña incorrectos");
-            }
+        }
+
+        private int cmbUsuarios_SelectedIndexChanged()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void cmbUsuarios_SelectedIndexChanged(object sender,EventArgs e)
+        {
+            i = cmbUsuarios.SelectedIndex;
+
+            lol.Text = i.ToString();
+
+           
         }
     }
 }
