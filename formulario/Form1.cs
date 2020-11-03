@@ -49,44 +49,5 @@ namespace formulario
 
         }
 
-         private void button1_Click(object sender, EventArgs e)
-         {
-                AgrSucursales m = new AgrSucursales();
-
-                m.Visible = true;
-         }
-
-
-            private void Cliente_Load(object sender, EventArgs e)
-            {
-                // TODO: esta línea de código carga datos en la tabla 'bancoDataSet2.cliente' Puede moverla o quitarla según sea necesario.
-                // this.clienteTableAdapter1.Fill(this.bancoDataSet2.cliente);
-                // TODO: esta línea de código carga datos en la tabla 'bancoDataSet1.cliente' Puede moverla o quitarla según sea necesario.
-                // this.clienteTableAdapter.Fill(this.bancoDataSet1.cliente);
-
-            }
-
-            private void btnVerfSucs_Click(object sender, EventArgs e)
-            {
-            }
-
-        private void btEMP_Click(object sender, EventArgs e)
-        {
-            Empleados m = new Empleados();
-
-            m.Visible = true;
-        }
-
-        private void BtnTans_Click(object sender, EventArgs e)
-        {
-            Transacciones m = new Transacciones();
-            m.Visible = true;
-        }
-
-        private void btEMP_Click_1(object sender, EventArgs e)
-        {
-            Empleados m = new Empleados();
-            m.Visible = true;
-        }
     }
 }

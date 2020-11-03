@@ -28,12 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnAgrEmp = new System.Windows.Forms.Button();
+            this.btnDeleteEmp = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnAgrEmp
+            // 
+            this.btnAgrEmp.Location = new System.Drawing.Point(52, 56);
+            this.btnAgrEmp.Name = "btnAgrEmp";
+            this.btnAgrEmp.Size = new System.Drawing.Size(102, 54);
+            this.btnAgrEmp.TabIndex = 0;
+            this.btnAgrEmp.Text = "Agregar Empleado";
+            this.btnAgrEmp.UseVisualStyleBackColor = true;
+            this.btnAgrEmp.Click += new System.EventHandler(this.btnAgrEmp_Click);
+            // 
+            // btnDeleteEmp
+            // 
+            this.btnDeleteEmp.Location = new System.Drawing.Point(244, 56);
+            this.btnDeleteEmp.Name = "btnDeleteEmp";
+            this.btnDeleteEmp.Size = new System.Drawing.Size(102, 54);
+            this.btnDeleteEmp.TabIndex = 1;
+            this.btnDeleteEmp.Text = "Eliminar Empleado";
+            this.btnDeleteEmp.UseVisualStyleBackColor = true;
+            // 
+            // Empleado_menu
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::formulario.Properties.Resources.fondo;
+            this.ClientSize = new System.Drawing.Size(408, 170);
+            this.Controls.Add(this.btnDeleteEmp);
+            this.Controls.Add(this.btnAgrEmp);
+            this.Name = "Empleado_menu";
             this.Text = "Empleado_menu";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnAgrEmp;
+        private System.Windows.Forms.Button btnDeleteEmp;
     }
 }

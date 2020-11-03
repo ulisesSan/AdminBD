@@ -143,3 +143,6 @@ D:\GitHub\AdminBD\formulario\obj\Debug\formulario.exe
 D:\GitHub\AdminBD\formulario\obj\Debug\formulario.pdb
 D:\GitHub\AdminBD\formulario\obj\Debug\formulario.Administrador.resources
 D:\GitHub\AdminBD\formulario\obj\Debug\formulario.Cliente_Menú.resources
+D:\GitHub\AdminBD\formulario\obj\Debug\formulario.Empleado_menu.resources
+D:\GitHub\AdminBD\formulario\obj\Debug\formulario.Transacciones_menu.resources
+D:\GitHub\AdminBD\formulario\obj\Debug\formulario.Menu_Sucursal.resources

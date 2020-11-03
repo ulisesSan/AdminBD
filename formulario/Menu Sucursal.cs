@@ -16,5 +16,11 @@ namespace formulario
         {
             InitializeComponent();
         }
+
+        private void btnSucus_Click(object sender, EventArgs e)
+        {
+            AgrSucursales m = new AgrSucursales();
+            m.Visible = true;
+        }
     }
 }

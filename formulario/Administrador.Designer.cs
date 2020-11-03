@@ -73,22 +73,34 @@
             // 
             // sucursales
             // 
+            this.sucursales.BackColor = System.Drawing.Color.Transparent;
+            this.sucursales.BackgroundImage = global::formulario.Properties.Resources.button;
+            this.sucursales.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.sucursales.FlatAppearance.BorderSize = 0;
+            this.sucursales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sucursales.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.sucursales.Location = new System.Drawing.Point(428, 219);
             this.sucursales.Name = "sucursales";
             this.sucursales.Size = new System.Drawing.Size(168, 64);
             this.sucursales.TabIndex = 2;
             this.sucursales.Text = "Sucursal";
-            this.sucursales.UseVisualStyleBackColor = true;
+            this.sucursales.UseVisualStyleBackColor = false;
             this.sucursales.Click += new System.EventHandler(this.sucursales_Click);
             // 
             // Transacciones
             // 
+            this.Transacciones.BackColor = System.Drawing.Color.Transparent;
+            this.Transacciones.BackgroundImage = global::formulario.Properties.Resources.button;
+            this.Transacciones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Transacciones.FlatAppearance.BorderSize = 0;
+            this.Transacciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Transacciones.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Transacciones.Location = new System.Drawing.Point(52, 219);
             this.Transacciones.Name = "Transacciones";
             this.Transacciones.Size = new System.Drawing.Size(168, 64);
             this.Transacciones.TabIndex = 3;
             this.Transacciones.Text = "Transacciones";
-            this.Transacciones.UseVisualStyleBackColor = true;
+            this.Transacciones.UseVisualStyleBackColor = false;
             this.Transacciones.Click += new System.EventHandler(this.Transacciones_Click);
             // 
             // Administrador

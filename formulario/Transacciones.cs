@@ -45,7 +45,6 @@ namespace formulario
             {
                 
                 sqlConnection.agrtrans(Transaction, AccountOrg, AccountDest, Date, Money, typeTrans, Description);//Ingresa datos a la tala transaccion
-                this.transaccionTableAdapter.Fill(this.transaccionesData.transaccion);//actualiza tabla
                 txtDescript.Text = "";
                 txtNtrans.Text = "";
                 txtAccountOrig.Text = "";

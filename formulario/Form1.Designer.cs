@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cliente));
-            this.Prueba = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.textSucursals = new System.Windows.Forms.TextBox();
             this.textBalance = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -56,27 +54,7 @@
             this.textNumCli = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.textDirection = new System.Windows.Forms.TextBox();
-            this.btEMP = new System.Windows.Forms.Button();
-            this.BtnTans = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // Prueba
-            // 
-            this.Prueba.AccessibleDescription = "Regustra a un nuevo cliente con su cuenta";
-            this.Prueba.BackColor = System.Drawing.Color.Transparent;
-            this.Prueba.BackgroundImage = global::formulario.Properties.Resources.button;
-            this.Prueba.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Prueba.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Prueba.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Prueba.ForeColor = System.Drawing.Color.Transparent;
-            this.Prueba.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Prueba.Location = new System.Drawing.Point(222, 403);
-            this.Prueba.Name = "Prueba";
-            this.Prueba.Size = new System.Drawing.Size(154, 54);
-            this.Prueba.TabIndex = 0;
-            this.Prueba.Text = "Registrar";
-            this.Prueba.UseVisualStyleBackColor = false;
-            this.Prueba.Click += new System.EventHandler(this.Prueba_Click);
             // 
             // label11
             // 
@@ -87,21 +65,6 @@
             this.label11.Size = new System.Drawing.Size(180, 13);
             this.label11.TabIndex = 22;
             this.label11.Text = "*Asegúrese de que la sucursal exista";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = global::formulario.Properties.Resources.button;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(32, 402);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(137, 55);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Sucursal";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textSucursals
             // 
@@ -307,44 +270,12 @@
             this.textDirection.Size = new System.Drawing.Size(180, 20);
             this.textDirection.TabIndex = 27;
             // 
-            // btEMP
-            // 
-            this.btEMP.BackColor = System.Drawing.Color.Transparent;
-            this.btEMP.BackgroundImage = global::formulario.Properties.Resources.button;
-            this.btEMP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btEMP.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btEMP.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btEMP.Location = new System.Drawing.Point(435, 403);
-            this.btEMP.Name = "btEMP";
-            this.btEMP.Size = new System.Drawing.Size(127, 54);
-            this.btEMP.TabIndex = 29;
-            this.btEMP.Text = "Agregar empleado";
-            this.btEMP.UseVisualStyleBackColor = false;
-            this.btEMP.Click += new System.EventHandler(this.btEMP_Click_1);
-            // 
-            // BtnTans
-            // 
-            this.BtnTans.BackColor = System.Drawing.Color.Transparent;
-            this.BtnTans.BackgroundImage = global::formulario.Properties.Resources.button;
-            this.BtnTans.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnTans.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BtnTans.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.BtnTans.Location = new System.Drawing.Point(605, 402);
-            this.BtnTans.Name = "BtnTans";
-            this.BtnTans.Size = new System.Drawing.Size(125, 55);
-            this.BtnTans.TabIndex = 30;
-            this.BtnTans.Text = "Transacciones";
-            this.BtnTans.UseVisualStyleBackColor = false;
-            this.BtnTans.Click += new System.EventHandler(this.BtnTans_Click);
-            // 
             // Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::formulario.Properties.Resources.fondo;
-            this.ClientSize = new System.Drawing.Size(773, 470);
-            this.Controls.Add(this.BtnTans);
-            this.Controls.Add(this.btEMP);
+            this.ClientSize = new System.Drawing.Size(773, 403);
             this.Controls.Add(this.textDirection);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.textNumCli);
@@ -370,8 +301,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.Prueba);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -380,17 +309,13 @@
             this.Name = "Cliente";
             this.RightToLeftLayout = true;
             this.Text = "Clientes";
-            this.Load += new System.EventHandler(this.Cliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button Prueba;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textSucursals;
         private System.Windows.Forms.TextBox textBalance;
         private System.Windows.Forms.Label label10;
@@ -415,8 +340,6 @@
         private System.Windows.Forms.TextBox textNumCli;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox textDirection;
-        private System.Windows.Forms.Button btEMP;
-        private System.Windows.Forms.Button BtnTans;
     }
 }
 

@@ -16,5 +16,13 @@ namespace formulario
         {
             InitializeComponent();
         }
+
+        private void btnAgrEmp_Click(object sender, EventArgs e)
+        {
+            Empleados m = new Empleados();
+            m.Visible = true;
+
+
+        }
     }
 }

@@ -170,8 +170,9 @@
             this.btnTrans.BackColor = System.Drawing.Color.Transparent;
             this.btnTrans.BackgroundImage = global::formulario.Properties.Resources.button;
             this.btnTrans.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTrans.FlatAppearance.BorderSize = 0;
             this.btnTrans.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnTrans.Location = new System.Drawing.Point(634, 360);
+            this.btnTrans.Location = new System.Drawing.Point(313, 299);
             this.btnTrans.Name = "btnTrans";
             this.btnTrans.Size = new System.Drawing.Size(118, 38);
             this.btnTrans.TabIndex = 14;
@@ -185,7 +186,7 @@
             this.btnExit.BackgroundImage = global::formulario.Properties.Resources.button;
             this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnExit.Location = new System.Drawing.Point(108, 360);
+            this.btnExit.Location = new System.Drawing.Point(7, 309);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(112, 37);
             this.btnExit.TabIndex = 15;
@@ -198,7 +199,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::formulario.Properties.Resources.fondo;
-            this.ClientSize = new System.Drawing.Size(1032, 450);
+            this.ClientSize = new System.Drawing.Size(458, 358);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnTrans);
             this.Controls.Add(this.txtDescript);

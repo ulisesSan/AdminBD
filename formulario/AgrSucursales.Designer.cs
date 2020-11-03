@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.textNameSucs = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,14 +38,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textNumSucs = new System.Windows.Forms.TextBox();
             this.Exitbtn = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.sucursalBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.idsucursalDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.direccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.horarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sucursalBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -107,7 +98,7 @@
             this.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAgregar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAgregar.Location = new System.Drawing.Point(607, 392);
+            this.btnAgregar.Location = new System.Drawing.Point(605, 216);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(163, 46);
             this.btnAgregar.TabIndex = 6;
@@ -139,7 +130,7 @@
             this.Exitbtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Exitbtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Exitbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Exitbtn.Location = new System.Drawing.Point(44, 392);
+            this.Exitbtn.Location = new System.Drawing.Point(44, 216);
             this.Exitbtn.Name = "Exitbtn";
             this.Exitbtn.Size = new System.Drawing.Size(138, 46);
             this.Exitbtn.TabIndex = 10;
@@ -147,71 +138,12 @@
             this.Exitbtn.UseVisualStyleBackColor = false;
             this.Exitbtn.Click += new System.EventHandler(this.Exitbtn_Click);
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idsucursalDataGridViewTextBoxColumn,
-            this.nombreDataGridViewTextBoxColumn,
-            this.direccionDataGridViewTextBoxColumn,
-            this.horarioDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.sucursalBindingSource;
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 181);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(776, 205);
-            this.dataGridView1.TabIndex = 11;
-            // 
-            // sucursalBindingSource
-            // 
-            this.sucursalBindingSource.DataMember = "sucursal";
-
-
-            // 
-            // idsucursalDataGridViewTextBoxColumn
-            // 
-            this.idsucursalDataGridViewTextBoxColumn.DataPropertyName = "id_sucursal";
-            this.idsucursalDataGridViewTextBoxColumn.HeaderText = "Nº sucursal";
-            this.idsucursalDataGridViewTextBoxColumn.Name = "idsucursalDataGridViewTextBoxColumn";
-            this.idsucursalDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idsucursalDataGridViewTextBoxColumn.Width = 90;
-            // 
-            // nombreDataGridViewTextBoxColumn
-            // 
-            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "nombre";
-            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
-            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
-            this.nombreDataGridViewTextBoxColumn.ReadOnly = true;
-            this.nombreDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // direccionDataGridViewTextBoxColumn
-            // 
-            this.direccionDataGridViewTextBoxColumn.DataPropertyName = "direccion";
-            this.direccionDataGridViewTextBoxColumn.HeaderText = "Direccion";
-            this.direccionDataGridViewTextBoxColumn.Name = "direccionDataGridViewTextBoxColumn";
-            this.direccionDataGridViewTextBoxColumn.ReadOnly = true;
-            this.direccionDataGridViewTextBoxColumn.Width = 280;
-            // 
-            // horarioDataGridViewTextBoxColumn
-            // 
-            this.horarioDataGridViewTextBoxColumn.DataPropertyName = "horario";
-            this.horarioDataGridViewTextBoxColumn.HeaderText = "Horario";
-            this.horarioDataGridViewTextBoxColumn.Name = "horarioDataGridViewTextBoxColumn";
-            this.horarioDataGridViewTextBoxColumn.ReadOnly = true;
-            this.horarioDataGridViewTextBoxColumn.Width = 250;
-            // 
             // AgrSucursales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::formulario.Properties.Resources.fondo;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(800, 295);
             this.Controls.Add(this.Exitbtn);
             this.Controls.Add(this.textNumSucs);
             this.Controls.Add(this.label4);
@@ -227,8 +159,6 @@
             this.Name = "AgrSucursales";
             this.Text = "Agregar Sucursales";
             this.Load += new System.EventHandler(this.AgrSucursales_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sucursalBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -246,11 +176,5 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textNumSucs;
         private System.Windows.Forms.Button Exitbtn;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.BindingSource sucursalBindingSource;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idsucursalDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn direccionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn horarioDataGridViewTextBoxColumn;
     }
 }

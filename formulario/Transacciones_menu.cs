@@ -16,5 +16,11 @@ namespace formulario
         {
             InitializeComponent();
         }
+
+        private void btntrans_Click(object sender, EventArgs e)
+        {
+            Transacciones m = new Transacciones();
+            m.Visible = true;
+        }
     }
 }
