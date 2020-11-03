@@ -45,18 +45,9 @@
             this.txtDescript = new System.Windows.Forms.TextBox();
             this.btnTrans = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.transaccionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.transaccionesData = new formulario.TransaccionesData();
             this.transaccionTableAdapter = new formulario.TransaccionesDataTableAdapters.transaccionTableAdapter();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idcuentaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idcuentadestDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.montoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tipotransaccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.transaccionBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.transaccionesData)).BeginInit();
             this.SuspendLayout();
@@ -208,30 +199,6 @@
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.idcuentaDataGridViewTextBoxColumn,
-            this.idcuentadestDataGridViewTextBoxColumn,
-            this.fechaDataGridViewTextBoxColumn,
-            this.montoDataGridViewTextBoxColumn,
-            this.tipotransaccionDataGridViewTextBoxColumn,
-            this.descripcionDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.transaccionBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(293, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dataGridView1.Size = new System.Drawing.Size(738, 342);
-            this.dataGridView1.TabIndex = 16;
-            // 
             // transaccionBindingSource
             // 
             this.transaccionBindingSource.DataMember = "transaccion";
@@ -246,69 +213,12 @@
             // 
             this.transaccionTableAdapter.ClearBeforeFill = true;
             // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "id_transaaccion";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Nº detransaaccion";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 90;
-            // 
-            // idcuentaDataGridViewTextBoxColumn
-            // 
-            this.idcuentaDataGridViewTextBoxColumn.DataPropertyName = "id_cuenta";
-            this.idcuentaDataGridViewTextBoxColumn.HeaderText = "Nº de cuenta origen";
-            this.idcuentaDataGridViewTextBoxColumn.Name = "idcuentaDataGridViewTextBoxColumn";
-            this.idcuentaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idcuentaDataGridViewTextBoxColumn.Width = 90;
-            // 
-            // idcuentadestDataGridViewTextBoxColumn
-            // 
-            this.idcuentadestDataGridViewTextBoxColumn.DataPropertyName = "id_cuenta_dest";
-            this.idcuentadestDataGridViewTextBoxColumn.FillWeight = 90F;
-            this.idcuentadestDataGridViewTextBoxColumn.HeaderText = "Nº de cuenta destino";
-            this.idcuentadestDataGridViewTextBoxColumn.Name = "idcuentadestDataGridViewTextBoxColumn";
-            this.idcuentadestDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // fechaDataGridViewTextBoxColumn
-            // 
-            this.fechaDataGridViewTextBoxColumn.DataPropertyName = "Fecha";
-            this.fechaDataGridViewTextBoxColumn.HeaderText = "fecha";
-            this.fechaDataGridViewTextBoxColumn.Name = "fechaDataGridViewTextBoxColumn";
-            this.fechaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.fechaDataGridViewTextBoxColumn.Width = 90;
-            // 
-            // montoDataGridViewTextBoxColumn
-            // 
-            this.montoDataGridViewTextBoxColumn.DataPropertyName = "monto";
-            this.montoDataGridViewTextBoxColumn.HeaderText = "Monto";
-            this.montoDataGridViewTextBoxColumn.Name = "montoDataGridViewTextBoxColumn";
-            this.montoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.montoDataGridViewTextBoxColumn.Width = 90;
-            // 
-            // tipotransaccionDataGridViewTextBoxColumn
-            // 
-            this.tipotransaccionDataGridViewTextBoxColumn.DataPropertyName = "tipo_transaccion";
-            this.tipotransaccionDataGridViewTextBoxColumn.HeaderText = "Tipo de transaccion";
-            this.tipotransaccionDataGridViewTextBoxColumn.Name = "tipotransaccionDataGridViewTextBoxColumn";
-            this.tipotransaccionDataGridViewTextBoxColumn.ReadOnly = true;
-            this.tipotransaccionDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // descripcionDataGridViewTextBoxColumn
-            // 
-            this.descripcionDataGridViewTextBoxColumn.DataPropertyName = "descripcion";
-            this.descripcionDataGridViewTextBoxColumn.HeaderText = "Descripcion";
-            this.descripcionDataGridViewTextBoxColumn.Name = "descripcionDataGridViewTextBoxColumn";
-            this.descripcionDataGridViewTextBoxColumn.ReadOnly = true;
-            this.descripcionDataGridViewTextBoxColumn.Width = 200;
-            // 
             // Transacciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::formulario.Properties.Resources.fondo;
             this.ClientSize = new System.Drawing.Size(1032, 450);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnTrans);
             this.Controls.Add(this.txtDescript);
@@ -330,7 +240,6 @@
             this.Name = "Transacciones";
             this.Text = "Transacciones";
             this.Load += new System.EventHandler(this.Transacciones_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.transaccionBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.transaccionesData)).EndInit();
             this.ResumeLayout(false);
@@ -357,16 +266,9 @@
         private System.Windows.Forms.Button btnTrans;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.DataGridViewTextBoxColumn idtransaaccionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private TransaccionesData transaccionesData;
         private System.Windows.Forms.BindingSource transaccionBindingSource;
         private TransaccionesDataTableAdapters.transaccionTableAdapter transaccionTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idcuentaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idcuentadestDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fechaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn montoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tipotransaccionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn descripcionDataGridViewTextBoxColumn;
     }
 }
