@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,11 +44,6 @@
             this.txtDescript = new System.Windows.Forms.TextBox();
             this.btnTrans = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
-            this.transaccionBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.transaccionesData = new formulario.TransaccionesData();
-            this.transaccionTableAdapter = new formulario.TransaccionesDataTableAdapters.transaccionTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.transaccionBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.transaccionesData)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -199,20 +193,6 @@
             this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // transaccionBindingSource
-            // 
-            this.transaccionBindingSource.DataMember = "transaccion";
-            this.transaccionBindingSource.DataSource = this.transaccionesData;
-            // 
-            // transaccionesData
-            // 
-            this.transaccionesData.DataSetName = "TransaccionesData";
-            this.transaccionesData.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // transaccionTableAdapter
-            // 
-            this.transaccionTableAdapter.ClearBeforeFill = true;
-            // 
             // Transacciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -240,8 +220,6 @@
             this.Name = "Transacciones";
             this.Text = "Transacciones";
             this.Load += new System.EventHandler(this.Transacciones_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.transaccionBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.transaccionesData)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,9 +244,6 @@
         private System.Windows.Forms.Button btnTrans;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.DataGridViewTextBoxColumn idtransaaccionDataGridViewTextBoxColumn;
-        private TransaccionesData transaccionesData;
-        private System.Windows.Forms.BindingSource transaccionBindingSource;
-        private TransaccionesDataTableAdapters.transaccionTableAdapter transaccionTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn fechaDataGridViewTextBoxColumn;
     }
 }
