@@ -50,6 +50,7 @@
             this.Deleteclie.TabIndex = 1;
             this.Deleteclie.Text = "Eliminar cliente";
             this.Deleteclie.UseVisualStyleBackColor = true;
+            this.Deleteclie.Click += new System.EventHandler(this.Deleteclie_Click);
             // 
             // Cliente_Menú
             // 

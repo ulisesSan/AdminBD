@@ -15,18 +15,18 @@ namespace formulario
         private void Prueba_Click(object sender, EventArgs e)
         {
             //Variables provenientes de las cajas de texto
-            string Name = textName.Text; String Account = textAccount.Text;
-            string AP = textAP.Text; string AccountType = textTypeAccount.Text;
-            String Date = textDate.Text; String Balance = textBalance.Text;
-            String Mail = textMail.Text; String Sucursal = textSucursals.Text;
-            String Sex = textSex.Text; String NumCli = textNumCli.Text;
+            string Name = textName.Text;
+            string AP = textAP.Text; 
+            String Date = textDate.Text; 
+            String Mail = textMail.Text; 
+            String Sex = textSex.Text; string Numclie = textNumCli.Text;
             String Phone = textPhone.Text; string Direction = textDirection.Text;
             //Variables provenientes de las cajas de texto
 
             //contador para verificar si ya se paso por algún if
 
             //Seccion de condicionales, para verificar que no quede algún dato sin llenar
-            if (Name == ""|| AP == ""|| Date == ""|| Mail == ""|| Sex == ""|| Phone == ""|| AccountType == ""|| Balance == ""|| Sucursal == ""|| NumCli == ""|| Direction == "")
+            if (Name == ""|| AP == ""|| Date == ""|| Mail == ""|| Sex == ""|| Phone == ""|| Direction == "")
             {
               MessageBox.Show("Debe de llenar todos los campos");
             }
@@ -35,19 +35,56 @@ namespace formulario
 
             else
             {
-                sqlConnection.AgrClient(Name,AP,AccountType,Date,Balance,Mail,Sucursal,Sex,
-                NumCli,Phone,Account,Direction);
+                sqlConnection.AgrClient(Name,AP,Date,Mail,Sex,Numclie,Phone,Direction);
             }
 
             //Se borra el contenido de las cajas de texto
-            textName.Text = (""); textAccount.Text = ("");
-            textAP.Text = (""); textTypeAccount.Text = ("");
-            textDate.Text = (""); textBalance.Text = ("");
-            textMail.Text = (""); textSucursals.Text = ("");
+            textName.Text = (""); 
+            textAP.Text = (""); 
+            textDate.Text = ("");
+            textMail.Text = ("");
             textSex.Text = (""); textNumCli.Text = ("");
             textPhone.Text = (""); textDirection.Text = ("");
 
         }
 
+        private void label11_Click(object sender, EventArgs e)
+        {
+                    }
+
+        private void Prueba_Click_1(object sender, EventArgs e)
+        {
+            //Variables provenientes de las cajas de texto
+            string Name = textName.Text;
+            string AP = textAP.Text;
+            String Date = textDate.Text;
+            String Mail = textMail.Text;
+            String Sex = textSex.Text; string Numclie = textNumCli.Text;
+            String Phone = textPhone.Text; string Direction = textDirection.Text;
+            //Variables provenientes de las cajas de texto
+
+            //contador para verificar si ya se paso por algún if
+
+            //Seccion de condicionales, para verificar que no quede algún dato sin llenar
+            if (Name == "" || AP == "" || Date == "" || Mail == "" || Sex == "" || Phone == "" || Direction == "")
+            {
+                MessageBox.Show("Debe de llenar todos los campos");
+            }
+
+            //Fin del area de condicionales
+
+            else
+            {
+                sqlConnection.AgrClient(Name, AP, Date, Mail, Sex, Numclie, Phone, Direction);
+            }
+
+            //Se borra el contenido de las cajas de texto
+            textName.Text = ("");
+            textAP.Text = ("");
+            textDate.Text = ("");
+            textMail.Text = ("");
+            textSex.Text = (""); textNumCli.Text = ("");
+            textPhone.Text = (""); textDirection.Text = ("");
+        }
     }
 }

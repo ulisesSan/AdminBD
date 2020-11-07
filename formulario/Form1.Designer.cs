@@ -29,15 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cliente));
-            this.label11 = new System.Windows.Forms.Label();
-            this.textSucursals = new System.Windows.Forms.TextBox();
-            this.textBalance = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textTypeAccount = new System.Windows.Forms.TextBox();
-            this.textAccount = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.textPhone = new System.Windows.Forms.TextBox();
@@ -54,85 +45,8 @@
             this.textNumCli = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.textDirection = new System.Windows.Forms.TextBox();
+            this.Prueba = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Location = new System.Drawing.Point(513, 301);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(180, 13);
-            this.label11.TabIndex = 22;
-            this.label11.Text = "*Asegúrese de que la sucursal exista";
-            // 
-            // textSucursals
-            // 
-            this.textSucursals.Location = new System.Drawing.Point(641, 218);
-            this.textSucursals.Name = "textSucursals";
-            this.textSucursals.Size = new System.Drawing.Size(119, 20);
-            this.textSucursals.TabIndex = 21;
-            // 
-            // textBalance
-            // 
-            this.textBalance.Location = new System.Drawing.Point(641, 162);
-            this.textBalance.Name = "textBalance";
-            this.textBalance.Size = new System.Drawing.Size(66, 20);
-            this.textBalance.TabIndex = 19;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Location = new System.Drawing.Point(528, 221);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(52, 13);
-            this.label10.TabIndex = 20;
-            this.label10.Text = "Sucursal*";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Location = new System.Drawing.Point(528, 165);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(34, 13);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "Saldo";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Location = new System.Drawing.Point(528, 100);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(79, 13);
-            this.label8.TabIndex = 9;
-            this.label8.Text = "Tipo de cuenta";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Location = new System.Drawing.Point(528, 39);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(95, 13);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "Numero de cuenta";
-            // 
-            // textTypeAccount
-            // 
-            this.textTypeAccount.Location = new System.Drawing.Point(641, 100);
-            this.textTypeAccount.Name = "textTypeAccount";
-            this.textTypeAccount.Size = new System.Drawing.Size(102, 20);
-            this.textTypeAccount.TabIndex = 18;
-            // 
-            // textAccount
-            // 
-            this.textAccount.Location = new System.Drawing.Point(641, 39);
-            this.textAccount.Name = "textAccount";
-            this.textAccount.Size = new System.Drawing.Size(105, 20);
-            this.textAccount.TabIndex = 17;
             // 
             // label6
             // 
@@ -270,31 +184,33 @@
             this.textDirection.Size = new System.Drawing.Size(180, 20);
             this.textDirection.TabIndex = 27;
             // 
+            // Prueba
+            // 
+            this.Prueba.Location = new System.Drawing.Point(118, 402);
+            this.Prueba.Name = "Prueba";
+            this.Prueba.Size = new System.Drawing.Size(141, 53);
+            this.Prueba.TabIndex = 28;
+            this.Prueba.Text = "Agregar";
+            this.Prueba.UseVisualStyleBackColor = true;
+            this.Prueba.Click += new System.EventHandler(this.Prueba_Click_1);
+            // 
             // Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::formulario.Properties.Resources.fondo;
-            this.ClientSize = new System.Drawing.Size(773, 403);
+            this.ClientSize = new System.Drawing.Size(389, 479);
+            this.Controls.Add(this.Prueba);
             this.Controls.Add(this.textDirection);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.textNumCli);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.textSucursals);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBalance);
-            this.Controls.Add(this.textTypeAccount);
-            this.Controls.Add(this.textAccount);
             this.Controls.Add(this.textPhone);
             this.Controls.Add(this.textSex);
             this.Controls.Add(this.textMail);
             this.Controls.Add(this.textDate);
             this.Controls.Add(this.textAP);
             this.Controls.Add(this.textName);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -315,15 +231,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textSucursals;
-        private System.Windows.Forms.TextBox textBalance;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textTypeAccount;
-        private System.Windows.Forms.TextBox textAccount;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textPhone;
@@ -340,6 +247,7 @@
         private System.Windows.Forms.TextBox textNumCli;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox textDirection;
+        private System.Windows.Forms.Button Prueba;
     }
 }
 

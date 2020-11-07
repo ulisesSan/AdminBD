@@ -1,6 +1,6 @@
 ﻿namespace formulario
 {
-    partial class Transacciones_menu
+    partial class Menu_cliente3
     {
         /// <summary>
         /// Required designer variable.
@@ -29,41 +29,38 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.btntrans = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(220, 88);
+            this.button1.Location = new System.Drawing.Point(12, 46);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 62);
+            this.button1.Size = new System.Drawing.Size(121, 52);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Eliminar transaccion";
+            this.button1.Text = "Agregar cuenta";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btntrans
+            // btnEliminar
             // 
-            this.btntrans.Location = new System.Drawing.Point(40, 88);
-            this.btntrans.Name = "btntrans";
-            this.btntrans.Size = new System.Drawing.Size(119, 62);
-            this.btntrans.TabIndex = 1;
-            this.btntrans.Text = "Agregar Transaccion";
-            this.btntrans.UseVisualStyleBackColor = true;
-            this.btntrans.Click += new System.EventHandler(this.btntrans_Click);
+            this.btnEliminar.Location = new System.Drawing.Point(195, 46);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(106, 52);
+            this.btnEliminar.TabIndex = 1;
+            this.btnEliminar.Text = "Eliminar cuenta";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // Transacciones_menu
+            // Menu_cliente3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::formulario.Properties.Resources.fondo;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(388, 180);
-            this.Controls.Add(this.btntrans);
+            this.ClientSize = new System.Drawing.Size(313, 128);
+            this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.button1);
-            this.DoubleBuffered = true;
-            this.Name = "Transacciones_menu";
-            this.Text = "Transacciones_menu";
+            this.Name = "Menu_cliente3";
+            this.Text = "Menu_cliente3";
             this.ResumeLayout(false);
 
         }
@@ -71,6 +68,6 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btntrans;
+        private System.Windows.Forms.Button btnEliminar;
     }
 }

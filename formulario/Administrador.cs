@@ -42,5 +42,11 @@ namespace formulario
             Menu_Sucursal m = new Menu_Sucursal();
             m.Visible = true;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Menu_cliente3 m = new Menu_cliente3();
+            m.Visible = true;
+        }
     }
 }
