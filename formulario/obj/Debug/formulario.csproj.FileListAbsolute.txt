@@ -150,3 +150,13 @@ D:\GitHub\AdminBD\formulario\obj\Debug\formulario.Agregar_cliente.resources
 D:\GitHub\AdminBD\formulario\obj\Debug\formulario.Form2.resources
 D:\GitHub\AdminBD\formulario\obj\Debug\formulario.Menu_cliente3.resources
 D:\GitHub\AdminBD\formulario\obj\Debug\formulario.Eliminar_Transaccion.resources
+C:\Users\Ulises CL\Documents\Github\AdminBD\formulario\obj\Debug\formulario.Administrador.resources
+C:\Users\Ulises CL\Documents\Github\AdminBD\formulario\obj\Debug\formulario.Agregar_cliente.resources
+C:\Users\Ulises CL\Documents\Github\AdminBD\formulario\obj\Debug\formulario.Cliente_Menú.resources
+C:\Users\Ulises CL\Documents\Github\AdminBD\formulario\obj\Debug\formulario.Editar_Cliente.resources
+C:\Users\Ulises CL\Documents\Github\AdminBD\formulario\obj\Debug\formulario.Form2.resources
+C:\Users\Ulises CL\Documents\Github\AdminBD\formulario\obj\Debug\formulario.Eliminar_Transaccion.resources
+C:\Users\Ulises CL\Documents\Github\AdminBD\formulario\obj\Debug\formulario.Empleado_menu.resources
+C:\Users\Ulises CL\Documents\Github\AdminBD\formulario\obj\Debug\formulario.Menu_cliente3.resources
+C:\Users\Ulises CL\Documents\Github\AdminBD\formulario\obj\Debug\formulario.Menu_Sucursal.resources
+C:\Users\Ulises CL\Documents\Github\AdminBD\formulario\obj\Debug\formulario.Transacciones_menu.resources

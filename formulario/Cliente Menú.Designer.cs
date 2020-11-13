@@ -30,6 +30,7 @@
         {
             this.Agrclie = new System.Windows.Forms.Button();
             this.Deleteclie = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Agrclie
@@ -52,12 +53,23 @@
             this.Deleteclie.UseVisualStyleBackColor = true;
             this.Deleteclie.Click += new System.EventHandler(this.Deleteclie_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(12, 168);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(103, 56);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Editar Cliente";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Cliente_Menú
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::formulario.Properties.Resources.fondo;
-            this.ClientSize = new System.Drawing.Size(306, 134);
+            this.ClientSize = new System.Drawing.Size(306, 247);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.Deleteclie);
             this.Controls.Add(this.Agrclie);
             this.Name = "Cliente_Menú";
@@ -70,5 +82,6 @@
 
         private System.Windows.Forms.Button Agrclie;
         private System.Windows.Forms.Button Deleteclie;
+        private System.Windows.Forms.Button button1;
     }
 }

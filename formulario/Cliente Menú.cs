@@ -28,5 +28,11 @@ namespace formulario
             Form2 m = new Form2();
             m.Visible = true;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Editar_Cliente m = new Editar_Cliente();
+            m.Visible = true;
+        }
     }
 }

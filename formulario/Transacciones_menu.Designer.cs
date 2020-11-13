@@ -58,7 +58,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::formulario.Properties.Resources.fondo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(388, 180);
+            this.ClientSize = new System.Drawing.Size(388, 270);
             this.Controls.Add(this.btntrans);
             this.Controls.Add(this.button1);
             this.DoubleBuffered = true;

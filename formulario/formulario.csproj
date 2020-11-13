@@ -86,11 +86,18 @@
     <Compile Include="AgrSucursales.Designer.cs">
       <DependentUpon>AgrSucursales.cs</DependentUpon>
     </Compile>
+    <Compile Include="classConsultas.cs" />
     <Compile Include="Cliente Menú.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Cliente Menú.Designer.cs">
       <DependentUpon>Cliente Menú.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editar Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editar Cliente.Designer.cs">
+      <DependentUpon>Editar Cliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Eliminar_Transaccion.cs">
       <SubType>Form</SubType>
@@ -128,6 +135,7 @@
     <Compile Include="Inicio.Designer.cs">
       <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mapa_Cliente.cs" />
     <Compile Include="Menu cuenta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cliente Menú.resx">
       <DependentUpon>Cliente Menú.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editar Cliente.resx">
+      <DependentUpon>Editar Cliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="eliminar cliente.resx">
       <DependentUpon>eliminar cliente.cs</DependentUpon>
