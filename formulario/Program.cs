@@ -16,7 +16,7 @@ namespace formulario
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Editar_Cliente());
+            Application.Run(new Inicio());
         }
     }
 }
