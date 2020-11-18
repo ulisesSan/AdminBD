@@ -1,0 +1,55 @@
+﻿using System;
+using System.Windows.Forms;
+using System.Runtime.InteropServices;
+
+namespace Formulario_chingon
+{
+    public partial class Form1 : Form
+    {
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int IParam);
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void panelSupp_MouseDown(object sender, MouseEventArgs e)
+        {
+            //Para poder mover con el panel superior
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void Minimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void formCliente_Click(object sender, EventArgs e)
+        {
+            newWindow(new Clientes());
+        }
+
+        private void newWindow(object formhija)
+        {
+            if (this.Derecha.Controls.Count > 0)
+            {
+                this.Derecha.Controls.RemoveAt(0);
+            }
+
+            Form fh = formhija as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.Derecha.Controls.Add(fh);
+            this.Derecha.Tag = fh;
+            fh.Show();
+        }
+    }
+}

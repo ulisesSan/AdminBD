@@ -1,0 +1,29 @@
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\Formulario perron\Formulario chingon\Formulario chingon\bin\x86\Debug\netcoreapp3.1\Formulario chingon.exe
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\Formulario perron\Formulario chingon\Formulario chingon\bin\x86\Debug\netcoreapp3.1\Formulario chingon.deps.json
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\Formulario perron\Formulario chingon\Formulario chingon\bin\x86\Debug\netcoreapp3.1\Formulario chingon.runtimeconfig.json
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\Formulario perron\Formulario chingon\Formulario chingon\bin\x86\Debug\netcoreapp3.1\Formulario chingon.runtimeconfig.dev.json
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\Formulario perron\Formulario chingon\Formulario chingon\bin\x86\Debug\netcoreapp3.1\Formulario chingon.dll
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\Formulario perron\Formulario chingon\Formulario chingon\bin\x86\Debug\netcoreapp3.1\Formulario chingon.pdb
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\Formulario perron\Formulario chingon\Formulario chingon\bin\x86\Debug\netcoreapp3.1\MySql.Data.dll
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\Formulario perron\Formulario chingon\Formulario chingon\bin\x86\Debug\netcoreapp3.1\Google.Protobuf.dll
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\Formulario perron\Formulario chingon\Formulario chingon\bin\x86\Debug\netcoreapp3.1\Zstandard.Net.dll
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\Formulario perron\Formulario chingon\Formulario chingon\bin\x86\Debug\netcoreapp3.1\K4os.Compression.LZ4.Streams.dll
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\Formulario perron\Formulario chingon\Formulario chingon\bin\x86\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\Formulario perron\Formulario chingon\Formulario chingon\bin\x86\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\Formulario perron\Formulario chingon\Formulario chingon\bin\x86\Debug\netcoreapp3.1\Renci.SshNet.dll
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\Formulario perron\Formulario chingon\Formulario chingon\bin\x86\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\Formulario perron\Formulario chingon\Formulario chingon\bin\x86\Debug\netcoreapp3.1\K4os.Hash.xxHash.dll
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\Formulario perron\Formulario chingon\Formulario chingon\obj\x86\Debug\netcoreapp3.1\Formulario chingon.csprojAssemblyReference.cache
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\Formulario perron\Formulario chingon\Formulario chingon\obj\x86\Debug\netcoreapp3.1\Formulario_chingon.Clientes.resources
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\Formulario perron\Formulario chingon\Formulario chingon\obj\x86\Debug\netcoreapp3.1\Formulario_chingon.Form1.resources
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\Formulario perron\Formulario chingon\Formulario chingon\obj\x86\Debug\netcoreapp3.1\Formulario_chingon.Properties.Resources.resources
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\Formulario perron\Formulario chingon\Formulario chingon\obj\x86\Debug\netcoreapp3.1\Formulario chingon.csproj.GenerateResource.cache
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\Formulario perron\Formulario chingon\Formulario chingon\obj\x86\Debug\netcoreapp3.1\Formulario chingon.AssemblyInfoInputs.cache
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\Formulario perron\Formulario chingon\Formulario chingon\obj\x86\Debug\netcoreapp3.1\Formulario chingon.AssemblyInfo.cs
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\Formulario perron\Formulario chingon\Formulario chingon\obj\x86\Debug\netcoreapp3.1\Formulario chingon.csproj.CoreCompileInputs.cache
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\Formulario perron\Formulario chingon\Formulario chingon\obj\x86\Debug\netcoreapp3.1\Formulario chingon.csproj.CopyComplete
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\Formulario perron\Formulario chingon\Formulario chingon\obj\x86\Debug\netcoreapp3.1\Formulario chingon.dll
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\Formulario perron\Formulario chingon\Formulario chingon\obj\x86\Debug\netcoreapp3.1\Formulario chingon.pdb
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\Formulario perron\Formulario chingon\Formulario chingon\obj\x86\Debug\netcoreapp3.1\Formulario chingon.genruntimeconfig.cache
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\Formulario perron\Formulario chingon\Formulario chingon\bin\x86\Debug\netcoreapp3.1\SshNet.Security.Cryptography.dll
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\Formulario perron\Formulario chingon\Formulario chingon\bin\x86\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
