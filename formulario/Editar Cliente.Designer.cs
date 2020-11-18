@@ -44,6 +44,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.edit_clie = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnBuscar
@@ -175,12 +176,23 @@
             this.label7.TabIndex = 17;
             this.label7.Text = "Telefono";
             // 
+            // edit_clie
+            // 
+            this.edit_clie.Location = new System.Drawing.Point(298, 386);
+            this.edit_clie.Name = "edit_clie";
+            this.edit_clie.Size = new System.Drawing.Size(75, 23);
+            this.edit_clie.TabIndex = 18;
+            this.edit_clie.Text = "Editar cliente";
+            this.edit_clie.UseVisualStyleBackColor = true;
+            this.edit_clie.Click += new System.EventHandler(this.edit_clie_Click);
+            // 
             // Editar_Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::formulario.Properties.Resources.fondo;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(400, 450);
+            this.Controls.Add(this.edit_clie);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -222,5 +234,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button edit_clie;
     }
 }

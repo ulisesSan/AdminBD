@@ -1,17 +1,15 @@
-﻿using System;
-using MySql.Data.MySqlClient;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Windows.Forms;
-using System.Security.Policy;
-using System.Collections.Generic;
 
 namespace formulario
 {
     class sqlConnection : classConsultas
     {
         public static int AgrClient(string Name, string AP, String Date,
-            String Mail,  String Sex, String NumCli, String Phone,
+            String Mail, String Sex, String NumCli, String Phone,
             string Direction)
-        { 
+        {
 
             string servidor = "localhost"; //Nombre o ip del servidor de MySQL
             string bd = "banco"; //Nombre de la base de datos
@@ -65,7 +63,7 @@ namespace formulario
             if (nombre == "" || AP == "" || fech == "" || correo == "" || telefono == "")
             {
                 MessageBox.Show("Debe de llenar todos los campos");
-                
+
             }
             else
             {
@@ -100,12 +98,12 @@ namespace formulario
                     if (datos != null)
                     {
                         MessageBox.Show(datos);
-                        
+
                     }
                     else
                     {
                         MessageBox.Show("Empleado agregado");//Imprime en cuadro de dialogo el resultado
-                        
+
                     }
                 }
                 catch (MySqlException ex)
@@ -121,7 +119,7 @@ namespace formulario
 
         public static void agrSuc(string Nombre, string Direccion, string Horario, string Numero)
         {
-            if (Nombre == "" || Direccion == "" || Horario == ""  || Numero == "")
+            if (Nombre == "" || Direccion == "" || Horario == "" || Numero == "")
             {
                 MessageBox.Show("Debe de llenar todos los campos");
             }
@@ -170,8 +168,8 @@ namespace formulario
             }
         }
 
-        public static void agrtrans(string Transaction,string AccountOrg,string AccountDest,string Date,
-            string Money,string typeTrans,string Description)
+        public static void agrtrans(string Transaction, string AccountOrg, string AccountDest, string Date,
+            string Money, string typeTrans, string Description)
         {
             string servidor = "localhost"; //Nombre o ip del servidor de MySQL
             string bd = "banco"; //Nombre de la base de datos
@@ -190,7 +188,7 @@ namespace formulario
 
             try
             {
-                string consulta = "call verif_exis('"+Transaction+"','"+AccountOrg+"','"+AccountDest+"','"+Date+"','"+Money+"','"+typeTrans+"','"+Description+"')";
+                string consulta = "call verif_exis('" + Transaction + "','" + AccountOrg + "','" + AccountDest + "','" + Date + "','" + Money + "','" + typeTrans + "','" + Description + "')";
                 //string consulta = "insert into transaccion(id_transaaccion,id_cuenta,id_cuenta_dest,fecha,monto,tipo_transaccio,descripcion)" +
                 //    "values('"+Transaction+"','"+AccountOrg+ "','"+AccountDest+ "','"+Date+ "','"+Money+ "','"+typeTrans+ "','"+Descriprion+"')";//Introduce datos a la bd
                 MySqlCommand comando = new MySqlCommand(consulta); //Declaración SQL para ejecutar contra una base de datos MySQL
@@ -202,7 +200,7 @@ namespace formulario
                 {
                     datos += reader.GetString(0) + "\n"; //Almacena cada registro con un salto de linea
                 }
-                if(datos == null)
+                if (datos == null)
                 {
                     MessageBox.Show("Agregado con exito!!");//Imprime en cuadro de dialogo el resultado
                 }
@@ -259,7 +257,7 @@ namespace formulario
                 }
                 else
                 {
-                    
+
                 }
             }
             catch (MySqlException ex)
@@ -270,10 +268,10 @@ namespace formulario
             {
                 conexionBD.Close(); //Cierra la conexión a MySQL
             }
-             //return 1;
+            //return 1;
         }
 
-        public static int agrcuenta (string numCue,string numClie, string Sucur,string tip,string saldo)
+        public static int agrcuenta(string numCue, string numClie, string Sucur, string tip, string saldo)
         {
             string servidor = "localhost"; //Nombre o ip del servidor de MySQL
             string bd = "banco"; //Nombre de la base de datos
@@ -292,7 +290,7 @@ namespace formulario
 
             try
             {
-                string consulta = "call Agregar_cuenta("+numCue+","+numClie+","+Sucur+","+tip+","+saldo+")"; //Consulta a MySQL (Introduce datos a la bd)
+                string consulta = "call Agregar_cuenta(" + numCue + "," + numClie + "," + Sucur + "," + tip + "," + saldo + ")"; //Consulta a MySQL (Introduce datos a la bd)
                 MySqlCommand comando = new MySqlCommand(consulta); //Declaración SQL para ejecutar contra una base de datos MySQL
                 comando.Connection = conexionBD; //Establece la MySqlConnection utilizada por esta instancia de MySqlCommand
                 conexionBD.Open(); //Abre la conexión
@@ -318,7 +316,7 @@ namespace formulario
 
         }
 
-        public static int delete_cli(string num_cli,String nombre)
+        public static int delete_cli(string num_cli, String nombre)
         {
             string servidor = "localhost"; //Nombre o ip del servidor de MySQL
             string bd = "banco"; //Nombre de la base de datos
@@ -337,7 +335,7 @@ namespace formulario
 
             try
             {
-                string consulta = "delete from cliente where id_cliente = "+num_cli+" and nombre = '"+nombre+"';"; //Consulta a MySQL (Introduce datos a la bd)
+                string consulta = "delete from cliente where id_cliente = " + num_cli + " and nombre = '" + nombre + "';"; //Consulta a MySQL (Introduce datos a la bd)
                 MySqlCommand comando = new MySqlCommand(consulta); //Declaración SQL para ejecutar contra una base de datos MySQL
                 comando.Connection = conexionBD; //Establece la MySqlConnection utilizada por esta instancia de MySqlCommand
                 conexionBD.Open(); //Abre la conexión
@@ -547,7 +545,7 @@ namespace formulario
             string usuario = "ulises"; //Usuario de acceso a MySQL
             string password = "Solosoyyo12"; //Contraseña de usuario de acceso a MySQL
             string[] datos = null;//Variable para almacenar el resultado
-            
+
 
             //Crearemos la cadena de conexión concatenando las variables
             string cadenaConexion = "Database=" + bd + "; Data Source=" + servidor + "; User Id=" + usuario + "; Password=" + password + "";
@@ -559,7 +557,7 @@ namespace formulario
             //Agregamos try-catch para capturar posibles errores de conexión o sintaxis.
             try
             {
-                string consulta = "call consulta_clientex2('"+dato+"')"; //Consulta a MySQL (Introduce datos a la bd)
+                string consulta = "call consulta_clientex2 (" + dato + ")"; //Consulta a MySQL (Introduce datos a la bd)
                 MySqlCommand comando = new MySqlCommand(consulta); //Declaración SQL para ejecutar contra una base de datos MySQL
                 comando.Connection = conexionBD; //Establece la MySqlConnection utilizada por esta instancia de MySqlCommand
                 conexionBD.Open(); //Abre la conexión
@@ -567,9 +565,9 @@ namespace formulario
                 int contador = reader.FieldCount;//obtiene el tamaño del reader
                 datos = new string[contador];
 
-                while (reader.Read()) 
+                while (reader.Read())
                 {
-                    
+
                     datos[0] += reader.GetString(0);//Almacena cada registro
                     datos[1] += reader.GetString(1);
                     datos[2] += reader.GetString(2);
@@ -582,7 +580,7 @@ namespace formulario
 
                 }
                 return datos;
-                
+
             }
             catch (MySqlException ex)
             {
@@ -593,7 +591,134 @@ namespace formulario
             {
                 conexionBD.Close(); //Cierra la conexión a MySQL
             }
-           
+
+        }
+        public static void edit_cliente(String dato, string Nombre, String Apellido, String fecha, String Direccion, string correo, String sexo, string telefono)
+        {
+
+            string servidor = "localhost"; //Nombre o ip del servidor de MySQL
+            string bd = "banco"; //Nombre de la base de datos
+            string usuario = "ulises"; //Usuario de acceso a MySQL
+            string password = "Solosoyyo12"; //Contraseña de usuario de acceso a MySQL
+            string[] datos = null;//Variable para almacenar el resultado
+
+
+            //Crearemos la cadena de conexión concatenando las variables
+            string cadenaConexion = "Database=" + bd + "; Data Source=" + servidor + "; User Id=" + usuario + "; Password=" + password + "";
+
+            //Instancia para conexión a MySQL, recibe la cadena de conexión
+            MySqlConnection conexionBD = new MySqlConnection(cadenaConexion);
+            MySqlDataReader reader = null; //Variable para leer el resultado de la consulta
+
+            //Agregamos try-catch para capturar posibles errores de conexión o sintaxis.
+            try
+            {
+                string consulta = "call edit_cliente ('" + dato + "','" + Nombre + "','" + Apellido + "','" + Direccion + "','" + correo + "','" + sexo + "','" + telefono + "')"; //Consulta a MySQL (Introduce datos a la bd)
+                MySqlCommand comando = new MySqlCommand(consulta); //Declaración SQL para ejecutar contra una base de datos MySQL
+                comando.Connection = conexionBD; //Establece la MySqlConnection utilizada por esta instancia de MySqlCommand
+                conexionBD.Open(); //Abre la conexión
+                reader = comando.ExecuteReader(); //Ejecuta la consulta y crea un MySqlDataReader
+                int contador = reader.FieldCount;//obtiene el tamaño del reader
+                datos = new string[contador];
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conexionBD.Close(); //Cierra la conexión a MySQL
+            }
+
+        }
+
+        public static string[] consulta_cuenta(string dato)
+        {
+            string servidor = "localhost"; //Nombre o ip del servidor de MySQL
+            string bd = "banco"; //Nombre de la base de datos
+            string usuario = "ulises"; //Usuario de acceso a MySQL
+            string password = "Solosoyyo12"; //Contraseña de usuario de acceso a MySQL
+            string[] datos = null;//Variable para almacenar el resultado
+
+
+            //Crearemos la cadena de conexión concatenando las variables
+            string cadenaConexion = "Database=" + bd + "; Data Source=" + servidor + "; User Id=" + usuario + "; Password=" + password + "";
+
+            //Instancia para conexión a MySQL, recibe la cadena de conexión
+            MySqlConnection conexionBD = new MySqlConnection(cadenaConexion);
+            MySqlDataReader reader = null; //Variable para leer el resultado de la consulta
+
+            //Agregamos try-catch para capturar posibles errores de conexión o sintaxis.
+            try
+            {
+                string consulta = "call consulta_cuenta (" + dato + ")"; //Consulta a MySQL (Introduce datos a la bd)
+                MySqlCommand comando = new MySqlCommand(consulta); //Declaración SQL para ejecutar contra una base de datos MySQL
+                comando.Connection = conexionBD; //Establece la MySqlConnection utilizada por esta instancia de MySqlCommand
+                conexionBD.Open(); //Abre la conexión
+                reader = comando.ExecuteReader(); //Ejecuta la consulta y crea un MySqlDataReader
+                int contador = reader.FieldCount;//obtiene el tamaño del reader
+                datos = new string[contador];
+
+                while (reader.Read())
+                {
+
+                    datos[0] += reader.GetString(0);//Almacena cada registro
+                    datos[1] += reader.GetString(1);
+                    datos[2] += reader.GetString(2);
+                    datos[3] += reader.GetString(3);
+                    datos[4] += reader.GetString(4);
+
+
+                }
+                return datos;
+
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+                return null;
+            }
+            finally
+            {
+                conexionBD.Close(); //Cierra la conexión a MySQL
+            }
+        }
+
+        public static void edit_cuenta(string dato, string tipo, string saldo)
+        {
+            string servidor = "localhost"; //Nombre o ip del servidor de MySQL
+            string bd = "banco"; //Nombre de la base de datos
+            string usuario = "ulises"; //Usuario de acceso a MySQL
+            string password = "Solosoyyo12"; //Contraseña de usuario de acceso a MySQL
+            string[] datos = null;//Variable para almacenar el resultado
+
+
+            //Crearemos la cadena de conexión concatenando las variables
+            string cadenaConexion = "Database=" + bd + "; Data Source=" + servidor + "; User Id=" + usuario + "; Password=" + password + "";
+
+            //Instancia para conexión a MySQL, recibe la cadena de conexión
+            MySqlConnection conexionBD = new MySqlConnection(cadenaConexion);
+            MySqlDataReader reader = null; //Variable para leer el resultado de la consulta
+
+            //Agregamos try-catch para capturar posibles errores de conexión o sintaxis.
+            try
+            {
+                string consulta = "update cuenta set tipo_de_cuenta = '"+tipo+"',saldo = '"+saldo+"' where id_cuenta = "+dato+""; //Consulta a MySQL (Introduce datos a la bd)
+                MySqlCommand comando = new MySqlCommand(consulta); //Declaración SQL para ejecutar contra una base de datos MySQL
+                comando.Connection = conexionBD; //Establece la MySqlConnection utilizada por esta instancia de MySqlCommand
+                conexionBD.Open(); //Abre la conexión
+                reader = comando.ExecuteReader(); //Ejecuta la consulta y crea un MySqlDataReader
+                int contador = reader.FieldCount;//obtiene el tamaño del reader
+                datos = new string[contador];
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conexionBD.Close(); //Cierra la conexión a MySQL
+            }
         }
     }
 }

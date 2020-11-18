@@ -129,6 +129,12 @@
     <Compile Include="eliminar cliente.Designer.cs">
       <DependentUpon>eliminar cliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="edita_cuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edita_cuenta.Designer.cs">
+      <DependentUpon>edita_cuenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -197,6 +203,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edita_cuenta.resx">
+      <DependentUpon>edita_cuenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>

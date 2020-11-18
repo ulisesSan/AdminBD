@@ -29,5 +29,12 @@ namespace formulario
             Agregar_cliente m = new Agregar_cliente();
             m.Visible = true;
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            edita_cuenta m = new edita_cuenta();
+            m.Visible = true;
+        }
+
     }
 }

@@ -160,3 +160,4 @@ C:\Users\Ulises CL\Documents\Github\AdminBD\formulario\obj\Debug\formulario.Empl
 C:\Users\Ulises CL\Documents\Github\AdminBD\formulario\obj\Debug\formulario.Menu_cliente3.resources
 C:\Users\Ulises CL\Documents\Github\AdminBD\formulario\obj\Debug\formulario.Menu_Sucursal.resources
 C:\Users\Ulises CL\Documents\Github\AdminBD\formulario\obj\Debug\formulario.Transacciones_menu.resources
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\formulario\obj\Debug\formulario.edita_cuenta.resources
