@@ -50,14 +50,14 @@ namespace Formulario_chingon
             this.panelSupp.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSupp.Location = new System.Drawing.Point(0, 0);
             this.panelSupp.Name = "panelSupp";
-            this.panelSupp.Size = new System.Drawing.Size(1184, 31);
+            this.panelSupp.Size = new System.Drawing.Size(1383, 31);
             this.panelSupp.TabIndex = 0;
             this.panelSupp.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelSupp_MouseDown);
             // 
             // Minimizar
             // 
             this.Minimizar.Image = ((System.Drawing.Image)(resources.GetObject("Minimizar.Image")));
-            this.Minimizar.Location = new System.Drawing.Point(1127, 2);
+            this.Minimizar.Location = new System.Drawing.Point(1318, 3);
             this.Minimizar.Name = "Minimizar";
             this.Minimizar.Size = new System.Drawing.Size(26, 22);
             this.Minimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -69,7 +69,7 @@ namespace Formulario_chingon
             // 
             this.Cerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Cerrar.Image = ((System.Drawing.Image)(resources.GetObject("Cerrar.Image")));
-            this.Cerrar.Location = new System.Drawing.Point(1159, 2);
+            this.Cerrar.Location = new System.Drawing.Point(1350, 3);
             this.Cerrar.Name = "Cerrar";
             this.Cerrar.Size = new System.Drawing.Size(25, 22);
             this.Cerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -103,14 +103,14 @@ namespace Formulario_chingon
             this.Derecha.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Derecha.Location = new System.Drawing.Point(200, 31);
             this.Derecha.Name = "Derecha";
-            this.Derecha.Size = new System.Drawing.Size(984, 560);
+            this.Derecha.Size = new System.Drawing.Size(1183, 560);
             this.Derecha.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 591);
+            this.ClientSize = new System.Drawing.Size(1383, 591);
             this.Controls.Add(this.Derecha);
             this.Controls.Add(this.izquierda);
             this.Controls.Add(this.panelSupp);
