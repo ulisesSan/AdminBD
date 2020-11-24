@@ -55,5 +55,76 @@ namespace Formulario_chingon
 
             return lista;
         }
-     }
+
+        public bool insertClientes(MapaCliente datos)
+        {
+            bool bandera = false;
+
+            string sql = "INSERT INTO cliente (nombre,apellidos,fecha_nac,direccion,correo,sexo,telefono)" +
+                "values('"+datos.Nombre+ "', '" + datos.Apellidos + "', '" + datos.Fecha + "', '" + datos.Direccion + "', '" + datos.Correo + "', '" + datos.Sexo + "', '" + datos.Telefono + "')";
+
+            try
+            {
+                MySqlConnection conexionBD = base.conectMysql();
+                conexionBD.Open();
+                MySqlCommand comando = new MySqlCommand(sql, conexionBD);
+                comando.ExecuteNonQuery();
+                bandera = true;
+            }
+            catch(MySqlException ex)
+            {
+                MessageBox.Show("Error"+ex.Message);
+                bandera = false;
+            }
+
+            return bandera;
+        }
+
+        public bool EditClientes(MapaCliente datos)
+        {
+            bool bandera = false;
+
+            string sql = "UPDATE cliente  set nombre = '" + datos.Nombre + "',apellidos = '" + datos.Apellidos + "',fecha_nac = '" + datos.Fecha + "',direccion = '" + datos.Direccion + "' " +
+                ",correo = '" + datos.Correo + "',sexo = '" + datos.Sexo + "',telefono = '" + datos.Telefono + "' WHERE id_cliente = '" + datos.Id_cliente + "' ";
+
+            try
+            {
+                MySqlConnection conexionBD = base.conectMysql();
+                conexionBD.Open();
+                MySqlCommand comando = new MySqlCommand(sql, conexionBD);
+                comando.ExecuteNonQuery();
+                bandera = true;
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Error" + ex.Message);
+                bandera = false;
+            }
+
+            return bandera;
+        }
+
+        public bool deleteClientes(int ID)
+        {
+            bool bandera = false;
+
+            string sql = "DELETE FROM cliente WHERE id_cliente = '" + ID + "' ";
+
+            try
+            {
+                MySqlConnection conexionBD = base.conectMysql();
+                conexionBD.Open();
+                MySqlCommand comando = new MySqlCommand(sql, conexionBD);
+                comando.ExecuteNonQuery();
+                bandera = true;
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Error" + ex.Message);
+                bandera = false;
+            }
+
+            return bandera;
+        }
+    }
 }
