@@ -27,3 +27,4 @@ C:\Users\Ulises CL\Documents\GitHub\AdminBD\Formulario perron\Formulario chingon
 C:\Users\Ulises CL\Documents\GitHub\AdminBD\Formulario perron\Formulario chingon\Formulario chingon\obj\Debug\netcoreapp3.1\Formulario chingon.csproj.CopyComplete
 C:\Users\Ulises CL\Documents\GitHub\AdminBD\Formulario perron\Formulario chingon\Formulario chingon\bin\Debug\netcoreapp3.1\SshNet.Security.Cryptography.dll
 C:\Users\Ulises CL\Documents\GitHub\AdminBD\Formulario perron\Formulario chingon\Formulario chingon\bin\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
+C:\Users\Ulises CL\Documents\GitHub\AdminBD\Formulario perron\Formulario chingon\Formulario chingon\obj\Debug\netcoreapp3.1\Formulario_chingon.Cuentas.resources

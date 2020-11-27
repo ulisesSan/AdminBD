@@ -36,6 +36,7 @@ namespace Formulario_chingon
             this.izquierda = new System.Windows.Forms.Panel();
             this.formCliente = new System.Windows.Forms.Button();
             this.Derecha = new System.Windows.Forms.Panel();
+            this.btnCuentas = new System.Windows.Forms.Button();
             this.panelSupp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cerrar)).BeginInit();
@@ -79,6 +80,7 @@ namespace Formulario_chingon
             // 
             // izquierda
             // 
+            this.izquierda.Controls.Add(this.btnCuentas);
             this.izquierda.Controls.Add(this.formCliente);
             this.izquierda.Dock = System.Windows.Forms.DockStyle.Left;
             this.izquierda.Location = new System.Drawing.Point(0, 31);
@@ -105,6 +107,16 @@ namespace Formulario_chingon
             this.Derecha.Name = "Derecha";
             this.Derecha.Size = new System.Drawing.Size(1183, 560);
             this.Derecha.TabIndex = 1;
+            // 
+            // btnCuentas
+            // 
+            this.btnCuentas.Location = new System.Drawing.Point(12, 194);
+            this.btnCuentas.Name = "btnCuentas";
+            this.btnCuentas.Size = new System.Drawing.Size(182, 55);
+            this.btnCuentas.TabIndex = 0;
+            this.btnCuentas.Text = "Cuentas";
+            this.btnCuentas.UseVisualStyleBackColor = true;
+            this.btnCuentas.Click += new System.EventHandler(this.btnCuentas_Click);
             // 
             // Form1
             // 
@@ -133,6 +145,7 @@ namespace Formulario_chingon
         private System.Windows.Forms.PictureBox Cerrar;
         private System.Windows.Forms.Button formCliente;
         private System.Windows.Forms.PictureBox Minimizar;
+        private System.Windows.Forms.Button btnCuentas;
     }
 }
 

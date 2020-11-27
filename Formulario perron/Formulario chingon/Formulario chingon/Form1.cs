@@ -51,5 +51,10 @@ namespace Formulario_chingon
             this.Derecha.Tag = fh;
             fh.Show();
         }
+
+        private void btnCuentas_Click(object sender, EventArgs e)
+        {
+            newWindow(new Cuentas());
+        }
     }
 }
