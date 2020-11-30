@@ -56,5 +56,10 @@ namespace Formulario_chingon
         {
             newWindow(new Cuentas());
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            newWindow(new Sucursal());
+        }
     }
 }

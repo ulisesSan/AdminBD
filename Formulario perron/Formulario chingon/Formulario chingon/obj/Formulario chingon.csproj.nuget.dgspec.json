@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ulises CL\\Documents\\GitHub\\AdminBD\\Formulario perron\\Formulario chingon\\Formulario chingon\\Formulario chingon.csproj": {}
+    "D:\\GitHub\\AdminBD\\Formulario perron\\Formulario chingon\\Formulario chingon\\Formulario chingon.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ulises CL\\Documents\\GitHub\\AdminBD\\Formulario perron\\Formulario chingon\\Formulario chingon\\Formulario chingon.csproj": {
+    "D:\\GitHub\\AdminBD\\Formulario perron\\Formulario chingon\\Formulario chingon\\Formulario chingon.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ulises CL\\Documents\\GitHub\\AdminBD\\Formulario perron\\Formulario chingon\\Formulario chingon\\Formulario chingon.csproj",
+        "projectUniqueName": "D:\\GitHub\\AdminBD\\Formulario perron\\Formulario chingon\\Formulario chingon\\Formulario chingon.csproj",
         "projectName": "Formulario chingon",
-        "projectPath": "C:\\Users\\Ulises CL\\Documents\\GitHub\\AdminBD\\Formulario perron\\Formulario chingon\\Formulario chingon\\Formulario chingon.csproj",
-        "packagesPath": "C:\\Users\\Ulises CL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ulises CL\\Documents\\GitHub\\AdminBD\\Formulario perron\\Formulario chingon\\Formulario chingon\\obj\\",
+        "projectPath": "D:\\GitHub\\AdminBD\\Formulario perron\\Formulario chingon\\Formulario chingon\\Formulario chingon.csproj",
+        "packagesPath": "C:\\Users\\ulise\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\AdminBD\\Formulario perron\\Formulario chingon\\Formulario chingon\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Ulises CL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ulise\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
