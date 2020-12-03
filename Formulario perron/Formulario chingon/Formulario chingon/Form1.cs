@@ -61,5 +61,25 @@ namespace Formulario_chingon
         {
             newWindow(new Sucursal());
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            newWindow(new Empleados());
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Derecha_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnTranasccion_Click(object sender, EventArgs e)
+        {
+            newWindow(new Tansacciones());
+        }
     }
 }

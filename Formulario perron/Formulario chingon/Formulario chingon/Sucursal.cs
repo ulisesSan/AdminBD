@@ -49,10 +49,12 @@ namespace Formulario_chingon
             {
                 int id = int.Parse(dataGridViewSucursal.CurrentRow.Cells[0].Value.ToString());
 
-                CtrlCliente _sucursal = new CtrlCliente();
+                CtrlSucursal _sucursal = new CtrlSucursal();
 
                 _sucursal.deleteClientes(id);
             }
+
+            tabla(null);
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)

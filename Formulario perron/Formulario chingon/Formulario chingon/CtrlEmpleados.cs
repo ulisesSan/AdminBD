@@ -1,28 +1,30 @@
-﻿using System.Collections.Generic;
-using MySql.Data.MySqlClient;
+﻿using MySql.Data.MySqlClient;
+using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace Formulario_chingon
 {
-    class CtrlCliente : MysqlConection
+    class CtrlEmpleados : MysqlConection
     {
-        public List<object> lista_cliente(string dato)
+        public List<object> lista_emp(string dato)
         {
+
+            DateTime fecha;
             MySqlDataReader reader;
 
             List<object> lista = new List<object>();
 
             string sql;
-            
-            if(dato== null)
+
+            if (dato == null)
             {
-                sql = "SELECT clientes.id_clientes, clientes.nombre, clientes.apellidos, clientes.fecha_nac,clientes.direccion,clientes.correo,clientes.sexo,clientes.telefono FROM  clientes;";
+                sql = "SELECT * FROM personal;";
             }
             else
             {
-                sql = "SELECT clientes.id_clientes, clientes.nombre, clientes.apellidos, clientes.fecha_nac,clientes.direccion,clientes.correo,clientes.sexo,clientes.telefono " +
-                    "FROM clientes WHERE id_clientes LIKE '%" + dato + "%' OR nombre LIKE '%" + dato + "%' OR apellidos LIKE '%" + dato + "%' OR fecha_nac LIKE '%" + dato + "%' " +
-                    "OR direccion LIKE '%" + dato + "%' OR correo LIKE '%" + dato + "%' OR sexo LIKE '%" + dato + "%' OR telefono LIKE '%" + dato + "%'";
+                sql = "SELECT * FROM personal " +
+                    "WHERE id_persona LIKE '%" + dato + "%' OR nombre LIKE '%" + dato + "%' OR apellidos LIKE '%" + dato + "%' OR correo LIKE '%" + dato + "%'";
             }
 
             try
@@ -36,57 +38,34 @@ namespace Formulario_chingon
 
                 while (reader.Read())
                 {
-                    MapaCliente _mapa = new MapaCliente();
-                    _mapa.Id_cliente = int.Parse(reader.GetString(0));
+                    MapaEmpleados _mapa = new MapaEmpleados();
+                    _mapa.ID = int.Parse(reader.GetString(0));
                     _mapa.Nombre = reader.GetString(1);
                     _mapa.Apellidos = reader.GetString(2);
-                    _mapa.Fecha = reader.GetString(3);
-                    _mapa.Direccion = reader.GetString(4);
-                    _mapa.Correo = reader.GetString(5);
-                    _mapa.Sexo = reader.GetString(6);
-                    _mapa.Telefono = int.Parse(reader.GetString(7));
+                    fecha = Convert.ToDateTime(reader.GetString(3));
+                    _mapa.Fech_nac = fecha.ToString("dd/MM/yyy");
+                    //_mapa.Fech_nac = reader.GetString(3);
+                    _mapa.Correo = reader.GetString(4);
+                    _mapa.Telefono = reader.GetString(5);
+                    _mapa.Sucursal = int.Parse(reader.GetString(6));
                     lista.Add(_mapa);
                 }
 
             }
             catch (MySqlException ex)
             {
-                MessageBox.Show("Error" + ex.Message);
+                Console.WriteLine("Error" + ex.Message);
             }
 
             return lista;
         }
 
-        public bool insertClientes(MapaCliente datos)
+        public bool Edit_Emp(MapaEmpleados datos)
         {
             bool bandera = false;
 
-            string sql = "INSERT INTO clientes (nombre,apellidos,fecha_nac,direccion,correo,sexo,telefono)" +
-                "values('"+datos.Nombre+ "', '" + datos.Apellidos + "', '" + datos.Fecha + "', '" + datos.Direccion + "', '" + datos.Correo + "', '" + datos.Sexo + "', '" + datos.Telefono + "')";
-
-            try
-            {
-                MySqlConnection conexionBD = base.conectMysql();
-                conexionBD.Open();
-                MySqlCommand comando = new MySqlCommand(sql, conexionBD);
-                comando.ExecuteNonQuery();
-                bandera = true;
-            }
-            catch(MySqlException ex)
-            {
-                MessageBox.Show("Error"+ex.Message);
-                bandera = false;
-            }
-
-            return bandera;
-        }
-
-        public bool EditClientes(MapaCliente datos)
-        {
-            bool bandera = false;
-
-            string sql = "UPDATE clientes  set nombre = '" + datos.Nombre + "',apellidos = '" + datos.Apellidos + "',fecha_nac = '" + datos.Fecha + "',direccion = '" + datos.Direccion + "' " +
-                ",correo = '" + datos.Correo + "',sexo = '" + datos.Sexo + "',telefono = '" + datos.Telefono + "' WHERE id_clientes = '" + datos.Id_cliente + "' ";
+            string sql = "UPDATE personal SET nombre = '" + datos.Nombre + "',Apellidos = '" + datos.Apellidos + "', fech_nac = '" + datos.Fech_nac + "',correo = '" + datos.Correo + "'" +
+                ", telefono = '" + datos.Telefono + "' WHERE id_persona = '" + datos.ID + "' ";
 
             try
             {
@@ -105,11 +84,39 @@ namespace Formulario_chingon
             return bandera;
         }
 
-        public bool deleteClientes(int ID)
+        public bool insertar_Emp(MapaEmpleados datos)
         {
             bool bandera = false;
 
-            string sql = "DELETE FROM clientes WHERE id_clientes = '" + ID + "' ";
+            string sql = "call InsertarEmpleado('" + datos.Nombre + "','" + datos.Apellidos + "','" + datos.Fech_nac + "','" + datos.Correo + "'" +
+                ",'" + datos.Telefono + "','" + datos.Sucursal + "')";
+            /*string sql = "INSERT INTO personal (nombre,Apellidos,fech_nac,correo,telefono,id_sucursal)" +
+                "VALUES(nombre = '" + datos.Nombre + "',Apellidos = '" + datos.Apellidos + "', fech_nac = '" + datos.Fech_nac + "',correo = '" + datos.Correo + "'" +
+                ", telefono = '" + datos.Telefono + "', id_sucursal = '"+datos.Sucursal+"')";*/
+
+            try
+            {
+                MySqlConnection conexionBD = base.conectMysql();
+                conexionBD.Open();
+                MySqlCommand comando = new MySqlCommand(sql, conexionBD);
+                comando.ExecuteNonQuery();
+                bandera = true;
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show("Error" + ex.Message);
+                bandera = false;
+            }
+
+            return bandera;
+        }
+
+        public bool EliminarEmp(int ID)
+        {
+
+            bool bandera = false;
+
+            string sql = "DELETE FROM personal WHERE id_persona = '" + ID + "' ";
 
             try
             {

@@ -22,9 +22,8 @@ namespace Formulario_chingon
             }
             else
             {
-                sql = "SELECT sucursal.id_sucursal,sucursal.nombre,sucursal.direccion,sucursal.horario FROM sucursal WHERE id_sucursal " +
-                    "LIKE '%"+dato+ "%' OR nombre LIKE '%" + dato + "%' OR direccion LIKE '%" + dato + "%' " +
-                    "OR horario LIKE '%" + dato + "%' OR";
+                sql = "SELECT sucursal.id_sucursal,sucursal.nombre,sucursal.direccion,sucursal.horario FROM sucursal " +
+                    "WHERE id_sucursal LIKE '%"+dato+ "%' OR nombre LIKE '%" + dato + "%' OR direccion LIKE '%" + dato + "%' OR horario LIKE '%" + dato + "%'";
             }
 
             try

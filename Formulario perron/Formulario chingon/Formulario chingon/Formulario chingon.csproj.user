@@ -7,10 +7,16 @@
     <Compile Update="Cuentas.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Sucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Tansacciones.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

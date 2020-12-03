@@ -105,6 +105,8 @@ namespace Formulario_chingon
                 CtrlCliente _cliente = new CtrlCliente();
 
                 _cliente.deleteClientes(id);
+
+                tabla(null);
             }
         }
 
