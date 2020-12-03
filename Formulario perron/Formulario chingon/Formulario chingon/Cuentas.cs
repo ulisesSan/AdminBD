@@ -105,7 +105,7 @@ namespace Formulario_chingon
                 _cliente.deleteCuenta(id);
             }
 
-            tabla(null)
+            tabla(null);
         }
     }
 }

@@ -29,6 +29,7 @@ namespace Formulario_chingon
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelSupp = new System.Windows.Forms.Panel();
             this.Minimizar = new System.Windows.Forms.PictureBox();
@@ -40,10 +41,13 @@ namespace Formulario_chingon
             this.btnCuentas = new System.Windows.Forms.Button();
             this.formCliente = new System.Windows.Forms.Button();
             this.Derecha = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panelSupp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cerrar)).BeginInit();
             this.izquierda.SuspendLayout();
+            this.Derecha.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelSupp
@@ -170,12 +174,28 @@ namespace Formulario_chingon
             // 
             this.Derecha.BackColor = System.Drawing.Color.MistyRose;
             this.Derecha.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Derecha.Controls.Add(this.label1);
             this.Derecha.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Derecha.Location = new System.Drawing.Point(200, 31);
             this.Derecha.Name = "Derecha";
             this.Derecha.Size = new System.Drawing.Size(1183, 560);
             this.Derecha.TabIndex = 1;
             this.Derecha.Paint += new System.Windows.Forms.PaintEventHandler(this.Derecha_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(372, 228);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(186, 73);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "label1";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
@@ -193,6 +213,8 @@ namespace Formulario_chingon
             ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cerrar)).EndInit();
             this.izquierda.ResumeLayout(false);
+            this.Derecha.ResumeLayout(false);
+            this.Derecha.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -209,6 +231,8 @@ namespace Formulario_chingon
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnTranasccion;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
