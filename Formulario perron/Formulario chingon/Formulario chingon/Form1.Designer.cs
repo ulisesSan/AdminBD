@@ -43,11 +43,13 @@ namespace Formulario_chingon
             this.Derecha = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelSupp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Cerrar)).BeginInit();
             this.izquierda.SuspendLayout();
             this.Derecha.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panelSupp
@@ -87,7 +89,7 @@ namespace Formulario_chingon
             // 
             // izquierda
             // 
-            this.izquierda.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.izquierda.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.izquierda.Controls.Add(this.btnTranasccion);
             this.izquierda.Controls.Add(this.button2);
             this.izquierda.Controls.Add(this.button1);
@@ -172,8 +174,9 @@ namespace Formulario_chingon
             // 
             // Derecha
             // 
-            this.Derecha.BackColor = System.Drawing.Color.MistyRose;
+            this.Derecha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(184)))), ((int)(((byte)(16)))));
             this.Derecha.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Derecha.Controls.Add(this.pictureBox1);
             this.Derecha.Controls.Add(this.label1);
             this.Derecha.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Derecha.Location = new System.Drawing.Point(200, 31);
@@ -197,6 +200,16 @@ namespace Formulario_chingon
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(189, 155);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -215,6 +228,7 @@ namespace Formulario_chingon
             this.izquierda.ResumeLayout(false);
             this.Derecha.ResumeLayout(false);
             this.Derecha.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -233,6 +247,7 @@ namespace Formulario_chingon
         private System.Windows.Forms.Button btnTranasccion;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
